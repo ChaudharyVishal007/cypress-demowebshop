@@ -1,0 +1,31 @@
+{
+  "validUser": {
+    "email": "testuser_jetski_12347@example.com",
+    "password": "Password123!",
+    "firstName": "Test",
+    "lastName": "User"
+  },
+  "newUser": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe_{{timestamp}}@test.com",
+    "password": "Password@123",
+    "confirmPassword": "Password@123"
+  },
+  "invalidUser": {
+    "email": "invalid@nonexistent.com",
+    "password": "WrongPass123"
+  },
+  "emptyUser": {
+    "email": "",
+    "password": ""
+  },
+  "malformedEmail": {
+    "email": "notanemail",
+    "password": "Test@1234"
+  },
+  "adminUser": {
+    "email": "admin@yourstore.com",
+    "password": "admin"
+  }
+}

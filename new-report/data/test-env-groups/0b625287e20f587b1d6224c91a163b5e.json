@@ -1,0 +1,1 @@
+{"id":"0b625287e20f587b1d6224c91a163b5e","fullName":"cypress/e2e/auth/login.cy.js#Login Functionality Negative Scenarios TC_LOGIN_011 - Should show error for malformed email","name":"TC_LOGIN_011 - Should show error for malformed email","status":"failed","testResultsByEnv":{"default":"c6aaed046370106d0090e4593bcac935"}}

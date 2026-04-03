@@ -1,0 +1,42 @@
+{
+  "billingAddress": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@test.com",
+    "country": "United States",
+    "state": "California",
+    "city": "Los Angeles",
+    "address1": "123 Test Street",
+    "address2": "Apt 4B",
+    "zip": "90001",
+    "phone": "5551234567"
+  },
+  "shippingAddress": {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "country": "United States",
+    "state": "New York",
+    "city": "New York",
+    "address1": "456 Demo Avenue",
+    "zip": "10001",
+    "phone": "5559876543"
+  },
+  "paymentMethods": {
+    "checkMoney": "Check / Money Order",
+    "creditCard": "Credit Card",
+    "purchaseOrder": "Purchase Order"
+  },
+  "creditCard": {
+    "type": "Visa",
+    "holder": "John Doe",
+    "number": "4111111111111111",
+    "expMonth": "04",
+    "expYear": "2027",
+    "cvv": "123"
+  },
+  "shippingMethods": {
+    "groundShipping": "Ground",
+    "nextDayAir": "Next Day Air",
+    "secondDayAir": "2nd Day Air"
+  }
+}

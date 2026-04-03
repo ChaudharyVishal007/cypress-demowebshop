@@ -1,0 +1,48 @@
+{
+  "singleProduct": {
+    "name": "14.1-inch Laptop",
+    "url": "/14-1-inch-laptop",
+    "price": 1590.00,
+    "category": "Computers"
+  },
+  "bookProduct": {
+    "name": "Computing and Internet",
+    "url": "/computing-and-internet",
+    "category": "Books"
+  },
+  "jewelryProduct": {
+    "name": "Create Your Own Jewelry",
+    "url": "/create-your-own-jewelry",
+    "category": "Jewelry"
+  },
+  "giftCard": {
+    "name": "25 virtual gift card",
+    "url": "/25-virtual-gift-card",
+    "amount": 25
+  },
+  "simpleProduct": {
+    "name": "Blue and green Sneaker",
+    "url": "/blue-and-green-sneaker",
+    "category": "Shoes"
+  },
+  "downloadableProduct": {
+    "name": "Music 2",
+    "url": "/music-2",
+    "category": "Digital downloads"
+  },
+  "categories": {
+    "books": "/books",
+    "computers": "/computers",
+    "electronics": "/electronics",
+    "apparel": "/apparel-shoes",
+    "digitalDownloads": "/digital-downloads",
+    "jewelry": "/jewelry",
+    "giftCards": "/gift-cards"
+  },
+  "searchTerms": {
+    "valid": "laptop",
+    "partial": "comp",
+    "noResults": "xyznonexistentproduct123",
+    "special": "book"
+  }
+}

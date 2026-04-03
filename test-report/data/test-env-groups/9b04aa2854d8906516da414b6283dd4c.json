@@ -1,0 +1,1 @@
+{"id":"9b04aa2854d8906516da414b6283dd4c","fullName":"cypress/e2e/auth/login.cy.js#Login Functionality Negative Scenarios TC_LOGIN_012 - Should show error for wrong password","name":"TC_LOGIN_012 - Should show error for wrong password","status":"passed","testResultsByEnv":{"default":"75337fdbdd7f8b7a06c7cb254f004e69"}}

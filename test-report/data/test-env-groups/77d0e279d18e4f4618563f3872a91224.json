@@ -1,0 +1,1 @@
+{"id":"77d0e279d18e4f4618563f3872a91224","fullName":"cypress/e2e/auth/login.cy.js#Login Functionality Negative Scenarios TC_LOGIN_007 - Should show error for empty email and password","name":"TC_LOGIN_007 - Should show error for empty email and password","status":"passed","testResultsByEnv":{"default":"bd37356612fd8d8a999629767dffd8a4"}}

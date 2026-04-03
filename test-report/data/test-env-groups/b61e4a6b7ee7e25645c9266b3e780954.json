@@ -1,0 +1,1 @@
+{"id":"b61e4a6b7ee7e25645c9266b3e780954","fullName":"cypress/e2e/auth/login.cy.js#Login Functionality Negative Scenarios TC_LOGIN_008 - Should show validation for empty email field","name":"TC_LOGIN_008 - Should show validation for empty email field","status":"passed","testResultsByEnv":{"default":"c0407d89ba28d3b0c2597b3771e7b8e2"}}
