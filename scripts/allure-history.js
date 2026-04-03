@@ -27,6 +27,7 @@ const REPORT_DIR       = path.join(ROOT, "allure-report");
 const HISTORY_BASE     = path.join(ROOT, "allure-history");
 const LAST_HISTORY     = path.join(HISTORY_BASE, "last-history");
 const CATEGORIES_SRC   = path.join(ROOT, "cypress", "fixtures", "categories.json");
+const HISTORY_ZIP      = path.join(HISTORY_BASE, "history.zip");
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -147,14 +148,33 @@ async function main() {
   }
 
   rmDir(REPORT_DIR);
-  run("npx", [
+  const allureArgs = [
     "allure", "generate",
-    "--output", REPORT_DIR,
-    RESULTS_DIR
-  ]);
+    "--output", REPORT_DIR
+  ];
+
+  // If we have an Allure 3 history dump archive, use it
+  if (fs.existsSync(HISTORY_ZIP)) {
+    console.log(`📦 Using Allure 3 history archive: ${HISTORY_ZIP}`);
+    allureArgs.push(`--dump=${HISTORY_ZIP}`);
+  }
+
+  allureArgs.push(RESULTS_DIR);
+
+  run("npx", allureArgs);
   console.log(`✔  Report generated: ${REPORT_DIR}`);
 
-  // 4b. Save latest history for next run
+  // 4b. Update Allure 3 history archive (cumulative)
+  section("STEP 4b — Updating Allure 3 history archive");
+  // Pack current results into the cumulative history archive
+  run("npx", [
+    "allure", "results", "pack",
+    "--name", HISTORY_ZIP,
+    RESULTS_DIR
+  ]);
+  console.log(`✔  Updated Allure 3 history archive: ${HISTORY_ZIP}`);
+
+  // 4c. Save latest history (Allure 2 style) for next run
   const reportHistory = path.join(REPORT_DIR, "history");
   if (fs.existsSync(reportHistory)) {
     rmDir(LAST_HISTORY);
