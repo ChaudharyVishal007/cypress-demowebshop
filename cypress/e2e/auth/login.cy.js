@@ -1,6 +1,12 @@
 /**
  * Test Suite: Login Functionality
  * Tags: smoke, regression, auth
+ *
+ * Layer Classification:
+ *  - Positive Scenarios (TC_LOGIN_001–005): e2e — full browser login flows touching auth service
+ *  - Negative Scenarios (TC_LOGIN_006–011): e2e — exercises server-side credential validation
+ *  - UI Validation (TC_LOGIN_012–015):      integration — form/DOM rendering checks, no state mutation
+ *  - Session Management (TC_LOGIN_016–017): e2e — full login/logout/redirect lifecycle
  */
 
 import LoginPage from "../../support/pages/auth/LoginPage";
@@ -18,11 +24,19 @@ describe("Login Functionality", { tags: ["smoke", "auth"] }, () => {
   beforeEach(() => {
     LoginPage.navigate();
     LoginPage.verifyOnLoginPage();
+    cy.allureEpic("Authentication");
+    cy.allureFeature("Login");
   });
 
   // ─── Positive Tests ────────────────────────────────────────────────────
 
   context("Positive Scenarios", () => {
+    beforeEach(() => {
+      cy.allureStory("Successful Login");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
+    });
+
     it("TC_LOGIN_001 - Should login successfully with valid credentials", () => {
       LoginPage.loginWith(
         Cypress.env("userEmail"),
@@ -73,6 +87,12 @@ describe("Login Functionality", { tags: ["smoke", "auth"] }, () => {
   // ─── Negative Tests ────────────────────────────────────────────────────
 
   context("Negative Scenarios", () => {
+    beforeEach(() => {
+      cy.allureStory("Invalid Login Attempts");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
+    });
+
     it("TC_LOGIN_006 - Should show error for invalid credentials", () => {
       LoginPage.loginWith(users.invalidUser.email, users.invalidUser.password);
       LoginPage.verifyLoginFailure();
@@ -111,6 +131,12 @@ describe("Login Functionality", { tags: ["smoke", "auth"] }, () => {
   // ─── UI Validation Tests ───────────────────────────────────────────────
 
   context("UI Validation", () => {
+    beforeEach(() => {
+      cy.allureStory("Login Page UI Elements");
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
+    });
+
     it("TC_LOGIN_012 - Should display login page elements correctly", () => {
       LoginPage.verifyReturningCustomerSection();
       LoginPage.verifyNewCustomerSection();
@@ -138,6 +164,12 @@ describe("Login Functionality", { tags: ["smoke", "auth"] }, () => {
   // ─── Session Tests ─────────────────────────────────────────────────────
 
   context("Session Management", () => {
+    beforeEach(() => {
+      cy.allureStory("Session Lifecycle");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
+    });
+
     it("TC_LOGIN_016 - Should logout successfully", () => {
       LoginPage.loginWith(
         Cypress.env("userEmail"),

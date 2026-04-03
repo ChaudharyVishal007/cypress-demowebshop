@@ -1,6 +1,13 @@
 /**
  * Test Suite: Home Page Functionality
  * Tags: smoke, regression
+ *
+ * Layer Classification:
+ *  - Page Load & Layout (TC_HOME_001–008):   integration — basic UI & element visibility
+ *  - Navigation (TC_HOME_009–017):           integration — internal link consistency
+ *  - Newsletter (TC_HOME_018–020):           e2e — newsletter subscription flow
+ *  - Community Poll (TC_HOME_021–022):       e2e — user interaction with poll service
+ *  - Featured Products (TC_HOME_023–025):    integration — featured catalog item display
  */
 
 import HomePage from "../../support/pages/HomePage";
@@ -8,12 +15,20 @@ import HomePage from "../../support/pages/HomePage";
 describe("Home Page Functionality", { tags: ["smoke"] }, () => {
 
   beforeEach(() => {
+    cy.allureEpic("General");
+    cy.allureFeature("Home Page");
     HomePage.navigate();
   });
 
   // ─── Page Load & Layout ────────────────────────────────────────────────
 
   context("Page Load & Layout", () => {
+    beforeEach(() => {
+      cy.allureStory("Home Page Layout & Elements");
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
+    });
+
     it("TC_HOME_001 - Should load home page successfully", () => {
       cy.url().should("eq", Cypress.config("baseUrl") + "/");
       HomePage.verifyLogoVisible();
@@ -51,6 +66,12 @@ describe("Home Page Functionality", { tags: ["smoke"] }, () => {
   // ─── Navigation ────────────────────────────────────────────────────────
 
   context("Navigation", () => {
+    beforeEach(() => {
+      cy.allureStory("Site-wide Navigation from Home");
+      cy.allureSeverity("normal");
+      cy.allureLayer("integration");
+    });
+
     it("TC_HOME_009 - Should navigate to Login page from header", () => {
       HomePage.navigateToLogin();
       cy.url().should("include", "/login");
@@ -101,7 +122,14 @@ describe("Home Page Functionality", { tags: ["smoke"] }, () => {
   // ─── Newsletter ────────────────────────────────────────────────────────
 
   context("Newsletter Subscription", () => {
+    beforeEach(() => {
+      cy.allureStory("Newsletter Subscription Flow");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
+    });
+
     it("TC_HOME_018 - Should display newsletter subscription input", () => {
+      cy.allureLayer("integration");
       HomePage.newsletterEmail.should("be.visible");
       HomePage.newsletterSubscribeBtn.should("be.visible");
     });
@@ -121,7 +149,14 @@ describe("Home Page Functionality", { tags: ["smoke"] }, () => {
   // ─── Community Poll ────────────────────────────────────────────────────
 
   context("Community Poll", () => {
+    beforeEach(() => {
+      cy.allureStory("Community Poll Participation");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
+    });
+
     it("TC_HOME_021 - Should display community poll block", () => {
+      cy.allureLayer("integration");
       cy.get("body").then(($body) => {
         if ($body.find(".block-poll").length > 0) {
           HomePage.pollBlock.should("be.visible");
@@ -147,6 +182,12 @@ describe("Home Page Functionality", { tags: ["smoke"] }, () => {
   // ─── Featured Products ─────────────────────────────────────────────────
 
   context("Featured Products Interaction", () => {
+    beforeEach(() => {
+      cy.allureStory("Featured Products UI");
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
+    });
+
     it("TC_HOME_023 - Should display prices for featured products", () => {
       HomePage.getFeaturedProductPrice(0).should("be.visible");
     });
@@ -161,3 +202,4 @@ describe("Home Page Functionality", { tags: ["smoke"] }, () => {
     });
   });
 });
+

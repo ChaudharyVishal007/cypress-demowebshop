@@ -1,6 +1,12 @@
 /**
  * Test Suite: Search Functionality
  * Tags: smoke, regression, search
+ *
+ * Layer Classification:
+ *  - Header Search (TC_SRCH_001–004):        integration — quick catalog lookup from header
+ *  - Basic Search Page (TC_SRCH_005–013):    integration — core search utility & navigation
+ *  - Advanced Search (TC_SRCH_014–020):       integration — complex filter logic (category, price, description)
+ *  - Search Result Display (TC_SRCH_021–024): integration — UI/Layout consistency for results
  */
 
 import SearchPage from "../../support/pages/search/SearchPage";
@@ -15,10 +21,18 @@ describe("Search Functionality", { tags: ["smoke", "search"] }, () => {
     });
   });
 
+  beforeEach(() => {
+    cy.allureEpic("Catalog");
+    cy.allureFeature("Search");
+  });
+
   // ─── Header Search ─────────────────────────────────────────────────────
 
   context("Header Search Bar", () => {
     beforeEach(() => {
+      cy.allureStory("Search from Header");
+      cy.allureSeverity("critical");
+      cy.allureLayer("integration");
       cy.visit("/");
     });
 
@@ -48,6 +62,9 @@ describe("Search Functionality", { tags: ["smoke", "search"] }, () => {
 
   context("Search Page - Basic Search", () => {
     beforeEach(() => {
+      cy.allureStory("Basic Search Page Usage");
+      cy.allureSeverity("critical");
+      cy.allureLayer("integration");
       SearchPage.navigate();
     });
 
@@ -110,6 +127,9 @@ describe("Search Functionality", { tags: ["smoke", "search"] }, () => {
 
   context("Search Page - Advanced Search", () => {
     beforeEach(() => {
+      cy.allureStory("Advanced Search Filters");
+      cy.allureSeverity("normal");
+      cy.allureLayer("integration");
       SearchPage.navigate();
       SearchPage.enableAdvancedSearch();
     });
@@ -165,29 +185,32 @@ describe("Search Functionality", { tags: ["smoke", "search"] }, () => {
   // ─── Search Result Display ─────────────────────────────────────────────
 
   context("Search Results Display", () => {
-    it("TC_SRCH_021 - Should display product images in search results", () => {
+    beforeEach(() => {
+      cy.allureStory("Search Results UI");
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       SearchPage.navigate();
+    });
+
+    it("TC_SRCH_021 - Should display product images in search results", () => {
       SearchPage.search("laptop");
       SearchPage.verifyResultsFound();
       cy.get(".search-results .picture img").should("be.visible");
     });
 
     it("TC_SRCH_022 - Should display product prices in search results", () => {
-      SearchPage.navigate();
       SearchPage.search("laptop");
       SearchPage.verifyResultsFound();
       cy.get(".search-results .price.actual-price").should("be.visible");
     });
 
     it("TC_SRCH_023 - Should display Add to Cart button in search results", () => {
-      SearchPage.navigate();
       SearchPage.search("book");
       SearchPage.verifyResultsFound();
       cy.get(".search-results .add-to-cart-button").should("exist");
     });
 
     it("TC_SRCH_024 - Should be able to sort search results", () => {
-      SearchPage.navigate();
       SearchPage.search("book");
       SearchPage.verifyResultsFound();
       ProductListPage.sortBy("Price: Low to High");
@@ -195,3 +218,4 @@ describe("Search Functionality", { tags: ["smoke", "search"] }, () => {
     });
   });
 });
+

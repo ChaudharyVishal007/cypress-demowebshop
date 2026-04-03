@@ -1,6 +1,13 @@
 /**
  * Test Suite: Customer Account Management
  * Tags: regression, account
+ *
+ * Layer Classification:
+ *  - My Account Info (TC_ACCT_001–009):    e2e — updates user profile state; integration — field validation
+ *  - Change Password (TC_ACCT_010–013):    e2e — updates auth credentials
+ *  - My Addresses (TC_ACCT_014–017):       e2e — address book CRUD operations
+ *  - My Orders (TC_ACCT_018–020):          integration — read-only history browsing
+ *  - Account Navigation (TC_ACCT_021–025): integration — sidebar link verification
  */
 
 import AccountPage from "../../support/pages/account/AccountPage";
@@ -8,6 +15,8 @@ import AccountPage from "../../support/pages/account/AccountPage";
 describe("Account Management", { tags: ["regression", "account"] }, () => {
 
   beforeEach(() => {
+    cy.allureEpic("User Management");
+    cy.allureFeature("Account");
     cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
   });
 
@@ -15,14 +24,20 @@ describe("Account Management", { tags: ["regression", "account"] }, () => {
 
   context("My Account Information", () => {
     beforeEach(() => {
+      cy.allureStory("Account Info Management");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
       AccountPage.navigateToInfo();
     });
 
     it("TC_ACCT_001 - Should navigate to My Account page", () => {
+      cy.allureLayer("integration");
       AccountPage.verifyOnAccountPage();
     });
 
     it("TC_ACCT_002 - Should display account info form fields", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       AccountPage.firstNameInput.should("be.visible");
       AccountPage.lastNameInput.should("be.visible");
       AccountPage.emailInput.should("be.visible");
@@ -59,12 +74,14 @@ describe("Account Management", { tags: ["regression", "account"] }, () => {
     });
 
     it("TC_ACCT_008 - Should show validation error for empty first name", () => {
+      cy.allureLayer("integration");
       AccountPage.firstNameInput.clear();
       AccountPage.saveInfo();
       cy.get(".field-validation-error").should("exist");
     });
 
     it("TC_ACCT_009 - Should show validation error for invalid email format", () => {
+      cy.allureLayer("integration");
       AccountPage.updateEmail("invalidemail");
       AccountPage.saveInfo();
       cy.get(".field-validation-error").should("exist");
@@ -75,10 +92,15 @@ describe("Account Management", { tags: ["regression", "account"] }, () => {
 
   context("Change Password", () => {
     beforeEach(() => {
+      cy.allureStory("Password Management");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
       AccountPage.navigateToChangePassword();
     });
 
     it("TC_ACCT_010 - Should navigate to Change Password page", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       cy.url().should("include", "/customer/changepassword");
       AccountPage.oldPasswordInput.should("be.visible");
       AccountPage.newPasswordInput.should("be.visible");
@@ -90,11 +112,13 @@ describe("Account Management", { tags: ["regression", "account"] }, () => {
     });
 
     it("TC_ACCT_012 - Should show validation for empty fields", () => {
+      cy.allureLayer("integration");
       AccountPage.changePasswordButton.click();
       cy.get(".field-validation-error, .validation-summary-errors").should("exist");
     });
 
     it("TC_ACCT_013 - Should show validation for short new password", () => {
+      cy.allureLayer("integration");
       AccountPage.oldPasswordInput.type(Cypress.env("userPassword"));
       AccountPage.newPasswordInput.type("123");
       AccountPage.confirmNewPasswordInput.type("123");
@@ -107,18 +131,26 @@ describe("Account Management", { tags: ["regression", "account"] }, () => {
 
   context("My Addresses", () => {
     beforeEach(() => {
+      cy.allureStory("Address Book Management");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
       AccountPage.navigateToAddresses();
     });
 
     it("TC_ACCT_014 - Should navigate to My Addresses page", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       cy.url().should("include", "/customer/addresses");
     });
 
     it("TC_ACCT_015 - Should display Add New Address button", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       AccountPage.addNewAddressButton.should("be.visible");
     });
 
     it("TC_ACCT_016 - Should navigate to Add New Address form", () => {
+      cy.allureLayer("integration");
       AccountPage.clickAddNewAddress();
       cy.url().should("include", "/customer/addressadd");
     });
@@ -143,6 +175,9 @@ describe("Account Management", { tags: ["regression", "account"] }, () => {
 
   context("My Orders", () => {
     beforeEach(() => {
+      cy.allureStory("Order History Browsing");
+      cy.allureSeverity("normal");
+      cy.allureLayer("integration");
       AccountPage.navigateToOrders();
     });
 
@@ -176,6 +211,9 @@ describe("Account Management", { tags: ["regression", "account"] }, () => {
 
   context("Account Navigation Links", () => {
     beforeEach(() => {
+      cy.allureStory("Account Sidebar Links");
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       AccountPage.navigateToInfo();
     });
 
@@ -201,3 +239,4 @@ describe("Account Management", { tags: ["regression", "account"] }, () => {
     });
   });
 });
+

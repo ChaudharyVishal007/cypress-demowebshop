@@ -1,6 +1,13 @@
 /**
  * Test Suite: Shopping Cart Functionality
  * Tags: smoke, regression, cart
+ *
+ * Layer Classification:
+ *  - Add to Cart (TC_CART_001–005):        e2e — full product-to-cart flow via UI & API
+ *  - Cart Management (TC_CART_006–015):    e2e — cart CRUD operations with server state
+ *  - Coupon & Gift Card (TC_CART_016–017): e2e — coupon engine integration
+ *  - Guest Cart (TC_CART_018–020):         e2e — guest user flow
+ *  - Cart Header Counter (TC_CART_021–022): integration — UI counter updates against live cart
  */
 
 import CartPage from "../../support/pages/cart/CartPage";
@@ -20,6 +27,11 @@ describe("Shopping Cart Functionality", { tags: ["smoke", "cart"] }, () => {
 
   context("Add to Cart", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Cart");
+      cy.allureStory("Add Product to Cart");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
     });
@@ -63,6 +75,11 @@ describe("Shopping Cart Functionality", { tags: ["smoke", "cart"] }, () => {
 
   context("Cart Management", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Cart");
+      cy.allureStory("Cart Item Management");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
       cy.addToCartByUrl(products.bookProduct.url);
@@ -129,6 +146,11 @@ describe("Shopping Cart Functionality", { tags: ["smoke", "cart"] }, () => {
 
   context("Coupon & Gift Card", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Cart");
+      cy.allureStory("Coupon & Gift Card Validation");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
       cy.addToCartByUrl(products.bookProduct.url);
@@ -149,6 +171,14 @@ describe("Shopping Cart Functionality", { tags: ["smoke", "cart"] }, () => {
   // ─── Guest Cart Tests ──────────────────────────────────────────────────
 
   context("Guest Cart", () => {
+    beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Cart");
+      cy.allureStory("Guest Cart Behaviour");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
+    });
+
     it("TC_CART_018 - Should allow guest to add products to cart", () => {
       ProductPage.navigate(products.bookProduct.url);
       ProductPage.clickAddToCart();
@@ -173,6 +203,11 @@ describe("Shopping Cart Functionality", { tags: ["smoke", "cart"] }, () => {
 
   context("Cart Header Counter", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Cart");
+      cy.allureStory("Cart Counter UI");
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
     });

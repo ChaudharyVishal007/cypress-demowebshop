@@ -1,6 +1,9 @@
 // ─── Import Allure Cypress ─────────────────────────────────────────────────
 import "allure-cypress";
 
+// ─── Import Allure Label Helpers ──────────────────────────────────────────
+import "./allure-labels";
+
 // ─── Import Commands ───────────────────────────────────────────────────────
 import "./commands/commands";
 

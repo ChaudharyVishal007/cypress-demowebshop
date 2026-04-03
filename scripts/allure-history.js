@@ -21,11 +21,12 @@ const path = require("path");
 const { execSync, spawnSync } = require("child_process");
 
 // ─── Paths ────────────────────────────────────────────────────────────────────
-const ROOT          = path.resolve(__dirname, "..");
-const RESULTS_DIR   = path.join(ROOT, "allure-results");
-const REPORT_DIR    = path.join(ROOT, "allure-report");
-const HISTORY_BASE  = path.join(ROOT, "allure-history");
-const LAST_HISTORY  = path.join(HISTORY_BASE, "last-history");
+const ROOT             = path.resolve(__dirname, "..");
+const RESULTS_DIR      = path.join(ROOT, "allure-results");
+const REPORT_DIR       = path.join(ROOT, "allure-report");
+const HISTORY_BASE     = path.join(ROOT, "allure-history");
+const LAST_HISTORY     = path.join(HISTORY_BASE, "last-history");
+const CATEGORIES_SRC   = path.join(ROOT, "cypress", "fixtures", "categories.json");
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -102,10 +103,32 @@ async function main() {
   fs.mkdirSync(RESULTS_DIR, { recursive: true });
   console.log(`✔  Cleared: ${RESULTS_DIR}`);
 
-  // ── 2. (Skipped) Allure 3 uses history.jsonl directly ─────────
+  // ── 2. Ensure history directory exists ───────────────────────────────────
   section("STEP 2 — Ensure history directory exists");
   fs.mkdirSync(HISTORY_BASE, { recursive: true });
   console.log("✔  Using Allure 3 history file: allure-history/history.jsonl");
+
+  // ── 2b. Inject environment.properties & categories.json into allure-results
+  section("STEP 2b — Injecting environment metadata and categories");
+
+  // environment.properties — tells Allure which environment tests ran against
+  const envProps = [
+    "browser=Chrome",
+    "env=prod",
+    "os=Windows",
+    "baseUrl=http://demowebshop.tricentis.com",
+    "platform=Web",
+  ].join("\n");
+  fs.writeFileSync(path.join(RESULTS_DIR, "environment.properties"), envProps);
+  console.log("✔  Written: allure-results/environment.properties");
+
+  // categories.json — failure grouping rules for Categories widget
+  if (fs.existsSync(CATEGORIES_SRC)) {
+    fs.copyFileSync(CATEGORIES_SRC, path.join(RESULTS_DIR, "categories.json"));
+    console.log("✔  Copied:  allure-results/categories.json");
+  } else {
+    console.warn("⚠  categories.json source not found — skipping");
+  }
 
   // ── 3. Run Cypress tests ───────────────────────────────────────────────────
   section("STEP 3 — Running Cypress tests");
@@ -113,13 +136,31 @@ async function main() {
 
   // ── 4. Generate Allure report ──────────────────────────────────────────────
   section("STEP 4 — Generating Allure report");
+  
+  // 4a. Restore previous history into results for trend analysis
+  if (fs.existsSync(LAST_HISTORY)) {
+    console.log("📂 Restoring previous history into results...");
+    copyDir(LAST_HISTORY, path.join(RESULTS_DIR, "history"));
+    console.log("✔  History restored to allure-results/history/");
+  } else {
+    console.log("ℹ  No previous history found to restore.");
+  }
+
   rmDir(REPORT_DIR);
   run("npx", [
     "allure", "generate",
-    RESULTS_DIR,
-    "--output", REPORT_DIR
+    "--output", REPORT_DIR,
+    RESULTS_DIR
   ]);
   console.log(`✔  Report generated: ${REPORT_DIR}`);
+
+  // 4b. Save latest history for next run
+  const reportHistory = path.join(REPORT_DIR, "history");
+  if (fs.existsSync(reportHistory)) {
+    rmDir(LAST_HISTORY);
+    copyDir(reportHistory, LAST_HISTORY);
+    console.log("✔  Saved latest history to allure-history/last-history/");
+  }
 
   // ── 5. Archive current results with timestamp ──────────────────────────────
   section("STEP 5 — Archiving current run results");
@@ -132,15 +173,15 @@ async function main() {
   // Prune old runs: keep only the last 20
   pruneOldRuns(HISTORY_BASE, 20);
 
-  // ── 6. (Skipped) Allure 3 auto-updates history.jsonl ─────────
-  section("STEP 6 — History is auto-updated by Allure 3");
-  console.log(`✔  Saved history → allure-history/history.jsonl`);
+  // ── 6. Allure 3 History Summary ──────────────────────────────────────────
+  section("STEP 6 — Allure 3 History Tracking");
+  console.log(`✔  Report ready: ${REPORT_DIR}/index.html`);
+  console.log(`✔  History tracked in: allure-history/last-history/`);
 
   // ── 7. Summary ─────────────────────────────────────────────────────────────
   section("DONE");
   console.log(`  Run archived : allure-history/${runLabel}/`);
   console.log(`  Report ready : ${REPORT_DIR}/index.html`);
-  console.log(`  History saved: allure-history/history.jsonl`);
   console.log(
     `\n  Open report  : npx allure open allure-report\n` +
     `  Or run       : npm run allure:open\n`

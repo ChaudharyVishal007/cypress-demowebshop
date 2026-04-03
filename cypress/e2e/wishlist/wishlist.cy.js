@@ -1,6 +1,13 @@
 /**
  * Test Suite: Wishlist Functionality
  * Tags: regression, wishlist
+ *
+ * Layer Classification:
+ *  - Add to Wishlist (TC_WISH_001–004):      e2e — full product-to-wishlist flow
+ *  - Wishlist Management (TC_WISH_005–011):   e2e — wishlist CRUD and item management
+ *  - Wishlist to Cart (TC_WISH_012–014):      e2e — cross-module state transition (wishlist -> cart)
+ *  - Guest Wishlist (TC_WISH_015–016):        e2e — session-based state management for guests
+ *  - Shared Wishlist (TC_WISH_017–018):      e2e — share link generation and external access
  */
 
 import WishlistPage from "../../support/pages/cart/WishlistPage";
@@ -17,10 +24,18 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
     });
   });
 
+  beforeEach(() => {
+    cy.allureEpic("Shopping");
+    cy.allureFeature("Wishlist");
+  });
+
   // ─── Add to Wishlist ───────────────────────────────────────────────────
 
   context("Add to Wishlist", () => {
     beforeEach(() => {
+      cy.allureStory("Add Product to Wishlist");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearWishlist();
     });
@@ -32,6 +47,8 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
     });
 
     it("TC_WISH_002 - Should update wishlist counter in header", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       cy.visit("/");
       cy.get(".wishlist-qty").should("contain.text", "(0)");
       ProductPage.navigate(products.bookProduct.url);
@@ -58,6 +75,9 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
 
   context("Wishlist Management", () => {
     beforeEach(() => {
+      cy.allureStory("Wishlist Item Management");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearWishlist();
       cy.addToWishlistByUrl(products.bookProduct.url);
@@ -65,15 +85,21 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
     });
 
     it("TC_WISH_005 - Should display wishlist page with added product", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       WishlistPage.verifyOnWishlistPage();
       WishlistPage.verifyWishlistHasItems();
     });
 
     it("TC_WISH_006 - Should display product name in wishlist", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       WishlistPage.verifyProductInWishlist(products.bookProduct.name);
     });
 
     it("TC_WISH_007 - Should display product price in wishlist", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       WishlistPage.wishlistPrices.first().should("be.visible");
     });
 
@@ -88,11 +114,15 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
     });
 
     it("TC_WISH_010 - Should update wishlist header count after removal", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       WishlistPage.removeItemAt(0);
       cy.get(".wishlist-qty").should("contain.text", "(0)");
     });
 
     it("TC_WISH_011 - Should display share wishlist link", () => {
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
       WishlistPage.verifyShareLinkVisible();
     });
   });
@@ -101,6 +131,9 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
 
   context("Move Wishlist Items to Cart", () => {
     beforeEach(() => {
+      cy.allureStory("Transition Wishlist to Cart");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearWishlist();
       cy.clearCart();
@@ -132,6 +165,12 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
   // ─── Guest Wishlist ────────────────────────────────────────────────────
 
   context("Guest Wishlist", () => {
+    beforeEach(() => {
+      cy.allureStory("Guest Wishlist Support");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
+    });
+
     it("TC_WISH_015 - Should allow guest to add items to wishlist", () => {
       ProductPage.navigate(products.bookProduct.url);
       ProductPage.clickAddToWishlist();
@@ -149,6 +188,9 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
 
   context("Shared Wishlist", () => {
     beforeEach(() => {
+      cy.allureStory("Wishlist Sharing Flow");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearWishlist();
       cy.addToWishlistByUrl(products.bookProduct.url);
@@ -156,6 +198,7 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
     });
 
     it("TC_WISH_017 - Should generate a shareable wishlist link", () => {
+      cy.allureLayer("integration");
       WishlistPage.shareWishlistLink
         .invoke("attr", "href")
         .should("include", "/wishlist/");
@@ -172,3 +215,4 @@ describe("Wishlist Functionality", { tags: ["regression", "wishlist"] }, () => {
     });
   });
 });
+

@@ -1,6 +1,14 @@
 /**
  * Test Suite: Checkout Functionality
  * Tags: regression, checkout
+ *
+ * Layer Classification:
+ *  - Full Checkout Flow (TC_CHK_001–005):    e2e — end-to-end order placement touching payment/order service
+ *  - Billing Address Validation (TC_CHK_006–007): e2e — server-side field validation
+ *  - Shipping Methods (TC_CHK_008–010):      integration — read-only options display
+ *  - Payment Methods (TC_CHK_011–012):       integration — read-only payment option display
+ *  - Order Review (TC_CHK_013–014):          e2e — confirm step with real order data
+ *  - Terms of Service (TC_CHK_015–016):      e2e — JS alert and navigation validation
  */
 
 import CartPage from "../../support/pages/cart/CartPage";
@@ -22,6 +30,11 @@ describe("Checkout Functionality", { tags: ["regression", "checkout"] }, () => {
 
   context("Full Checkout Flow - Check/Money Order", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Checkout");
+      cy.allureStory("Complete Order Placement");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
       cy.addToCartByUrl(products.bookProduct.url);
@@ -108,6 +121,11 @@ describe("Checkout Functionality", { tags: ["regression", "checkout"] }, () => {
 
   context("Billing Address Validation", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Checkout");
+      cy.allureStory("Billing Address Field Validation");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
       cy.addToCartByUrl(products.bookProduct.url);
@@ -136,6 +154,11 @@ describe("Checkout Functionality", { tags: ["regression", "checkout"] }, () => {
 
   context("Shipping Methods", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Checkout");
+      cy.allureStory("Shipping Method Selection");
+      cy.allureSeverity("normal");
+      cy.allureLayer("integration");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
       cy.addToCartByUrl(products.bookProduct.url);
@@ -171,6 +194,11 @@ describe("Checkout Functionality", { tags: ["regression", "checkout"] }, () => {
 
   context("Payment Methods", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Checkout");
+      cy.allureStory("Payment Method Selection");
+      cy.allureSeverity("normal");
+      cy.allureLayer("integration");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
       cy.addToCartByUrl(products.bookProduct.url);
@@ -199,6 +227,11 @@ describe("Checkout Functionality", { tags: ["regression", "checkout"] }, () => {
 
   context("Order Review / Confirmation", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Checkout");
+      cy.allureStory("Order Review & Confirmation Step");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
       cy.addToCartByUrl(products.bookProduct.url);
@@ -230,6 +263,11 @@ describe("Checkout Functionality", { tags: ["regression", "checkout"] }, () => {
 
   context("Terms of Service", () => {
     beforeEach(() => {
+      cy.allureEpic("Shopping");
+      cy.allureFeature("Checkout");
+      cy.allureStory("Terms of Service Enforcement");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
       cy.addToCartByUrl(products.bookProduct.url);

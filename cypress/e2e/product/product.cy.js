@@ -1,6 +1,12 @@
 /**
  * Test Suite: Product Detail & Listing Functionality
  * Tags: smoke, regression, product
+ *
+ * Layer Classification:
+ *  - Home Page Products (TC_PROD_001–003):    integration — read-only catalog display checks
+ *  - Product List Page (TC_PROD_004–017):     integration — category browsing & sorting (no state change)
+ *  - Product Detail Page (TC_PROD_018–028):   integration — detail display; e2e for cart/wishlist actions
+ *  - Product Reviews (TC_PROD_029):            e2e — form submission touching review service
  */
 
 import ProductPage from "../../support/pages/product/ProductPage";
@@ -20,6 +26,11 @@ describe("Product Functionality", { tags: ["regression", "product"] }, () => {
 
   context("Home Page Products", () => {
     beforeEach(() => {
+      cy.allureEpic("Catalog");
+      cy.allureFeature("Product");
+      cy.allureStory("Featured Products on Home Page");
+      cy.allureSeverity("normal");
+      cy.allureLayer("integration");
       HomePage.navigate();
     });
 
@@ -49,6 +60,14 @@ describe("Product Functionality", { tags: ["regression", "product"] }, () => {
   // ─── Category / List Page ──────────────────────────────────────────────
 
   context("Product List Page", () => {
+    beforeEach(() => {
+      cy.allureEpic("Catalog");
+      cy.allureFeature("Product");
+      cy.allureStory("Category & List Page Browsing");
+      cy.allureSeverity("normal");
+      cy.allureLayer("integration");
+    });
+
     it("TC_PROD_004 - Should display products in Books category", () => {
       ProductListPage.navigate(products.categories.books);
       ProductListPage.verifyPageTitle("Books");
@@ -143,6 +162,14 @@ describe("Product Functionality", { tags: ["regression", "product"] }, () => {
   // ─── Product Detail Page ───────────────────────────────────────────────
 
   context("Product Detail Page", () => {
+    beforeEach(() => {
+      cy.allureEpic("Catalog");
+      cy.allureFeature("Product");
+      cy.allureStory("Product Detail Page UI & Actions");
+      cy.allureSeverity("normal");
+      cy.allureLayer("integration");
+    });
+
     it("TC_PROD_018 - Should display product title on detail page", () => {
       ProductPage.navigate(products.singleProduct.url);
       ProductPage.verifyProductTitle(products.singleProduct.name);
@@ -175,6 +202,9 @@ describe("Product Functionality", { tags: ["regression", "product"] }, () => {
     });
 
     it("TC_PROD_024 - Should add product to cart from detail page", () => {
+      cy.allureStory("Add to Cart from Detail Page");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearCart();
       ProductPage.navigate(products.singleProduct.url);
@@ -183,6 +213,9 @@ describe("Product Functionality", { tags: ["regression", "product"] }, () => {
     });
 
     it("TC_PROD_025 - Should add product to wishlist from detail page", () => {
+      cy.allureStory("Add to Wishlist from Detail Page");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
       cy.clearWishlist();
       ProductPage.navigate(products.bookProduct.url);
@@ -218,6 +251,14 @@ describe("Product Functionality", { tags: ["regression", "product"] }, () => {
   // ─── Product Reviews ───────────────────────────────────────────────────
 
   context("Product Reviews", () => {
+    beforeEach(() => {
+      cy.allureEpic("Catalog");
+      cy.allureFeature("Product");
+      cy.allureStory("Product Review Submission");
+      cy.allureSeverity("minor");
+      cy.allureLayer("e2e");
+    });
+
     before(() => {
       cy.loginViaAPI(Cypress.env("userEmail"), Cypress.env("userPassword"));
     });

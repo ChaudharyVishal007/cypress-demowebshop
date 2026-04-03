@@ -1,6 +1,11 @@
 /**
  * Test Suite: Registration Functionality
  * Tags: smoke, regression, auth
+ *
+ * Layer Classification:
+ *  - Positive Scenarios (TC_REG_001–006): e2e — full registration flow touching auth/user service
+ *  - Negative Scenarios (TC_REG_007–015): e2e — server-side field & business rule validation
+ *  - UI Validation (TC_REG_016–018):      integration — DOM element assertion, no server state change
  */
 
 import RegisterPage from "../../support/pages/auth/RegisterPage";
@@ -18,11 +23,19 @@ describe("Registration Functionality", { tags: ["smoke", "auth"] }, () => {
   beforeEach(() => {
     RegisterPage.navigate();
     RegisterPage.verifyOnRegisterPage();
+    cy.allureEpic("Authentication");
+    cy.allureFeature("Registration");
   });
 
   // ─── Positive Tests ────────────────────────────────────────────────────
 
   context("Positive Scenarios", () => {
+    beforeEach(() => {
+      cy.allureStory("Successful Registration");
+      cy.allureSeverity("critical");
+      cy.allureLayer("e2e");
+    });
+
     it("TC_REG_001 - Should register a new user successfully", () => {
       const timestamp = Date.now();
       const userData = {
@@ -109,6 +122,12 @@ describe("Registration Functionality", { tags: ["smoke", "auth"] }, () => {
   // ─── Negative Tests ────────────────────────────────────────────────────
 
   context("Negative Scenarios", () => {
+    beforeEach(() => {
+      cy.allureStory("Registration Validation Errors");
+      cy.allureSeverity("normal");
+      cy.allureLayer("e2e");
+    });
+
     it("TC_REG_007 - Should show validation errors for empty form", () => {
       RegisterPage.clickRegister();
       RegisterPage.verifyValidationErrors();
@@ -198,6 +217,12 @@ describe("Registration Functionality", { tags: ["smoke", "auth"] }, () => {
   // ─── UI Validation ─────────────────────────────────────────────────────
 
   context("UI Validation", () => {
+    beforeEach(() => {
+      cy.allureStory("Registration Form UI Elements");
+      cy.allureSeverity("minor");
+      cy.allureLayer("integration");
+    });
+
     it("TC_REG_016 - Should display all registration form elements", () => {
       RegisterPage.genderMaleRadio.should("exist");
       RegisterPage.genderFemaleRadio.should("exist");
