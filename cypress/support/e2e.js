@@ -7,6 +7,9 @@ import "./allure-labels";
 // ─── Import Commands ───────────────────────────────────────────────────────
 import "./commands/commands";
 
+// ─── AI Self-Healing (cy.selfHeal) ─────────────────────────────────────────
+import "./commands/selfHeal";
+
 // ─── Global Configuration ──────────────────────────────────────────────────
 
 // Prevent Cypress from failing on uncaught exceptions from app

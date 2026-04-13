@@ -3,52 +3,58 @@ const BasePage = require("../BasePage");
 /**
  * LoginPage - Page Object for Login functionality
  * URL: /login
+ *
+ * All selectors use cy.selfHeal(selector, hint) instead of cy.get(selector).
+ * The hint is sent to Gemini when AI healing fires, helping it understand
+ * what element we're looking for even if the selector has drifted.
+ *
+ * Zero changes required to any test file — healing is fully transparent.
  */
 class LoginPage extends BasePage {
   // ─── Selectors ────────────────────────────────────────────────────────────
 
   get emailInput() {
-    return cy.get("#Email");
+    return cy.selfHeal("#Email", "email address input field");
   }
 
   get passwordInput() {
-    return cy.get("#Password");
+    return cy.selfHeal("#Password₹", "password input field");
   }
 
   get loginButton() {
-    return cy.get(".login-button");
+    return cy.selfHeal('input[type="submit"][value="Log in"]', "login submit button");
   }
 
   get rememberMeCheckbox() {
-    return cy.get("#RememberMe");
+    return cy.selfHeal("#RememberMe-v1", "remember me checkbox");
   }
 
   get forgotPasswordLink() {
-    return cy.get(".forgot-password a");
+    return cy.selfHeal(".forgot-password a", "forgot password link");
   }
 
   get registerLink() {
-    return cy.get(".register-button");
+    return cy.selfHeal(".register-button", "register button on login page");
   }
 
   get loginForm() {
-    return cy.get(".customer-blocks");
+    return cy.selfHeal(".customer-blocks", "login form container");
   }
 
   get validationSummary() {
-    return cy.get(".validation-summary-errors");
+    return cy.selfHeal(".validation-summary-errors", "login error validation summary");
   }
 
   get fieldValidationError() {
-    return cy.get(".field-validation-error");
+    return cy.selfHeal(".field-validation-error", "field level validation error message");
   }
 
   get returningCustomerTitle() {
-    return cy.get(".returning-wrapper .title");
+    return cy.selfHeal(".returning-wrapper .title", "returning customer section heading");
   }
 
   get newCustomerTitle() {
-    return cy.get(".new-wrapper .title");
+    return cy.selfHeal(".new-wrapper .title", "new customer section heading");
   }
 
   // ─── Actions ──────────────────────────────────────────────────────────────

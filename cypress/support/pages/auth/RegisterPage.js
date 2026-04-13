@@ -3,64 +3,62 @@ const BasePage = require("../BasePage");
 /**
  * RegisterPage - Page Object for Registration functionality
  * URL: /register
+ *
+ * All primary selectors use cy.selfHeal(selector, hint) for automatic AI healing.
  */
 class RegisterPage extends BasePage {
   // ─── Selectors ────────────────────────────────────────────────────────────
 
   get genderMaleRadio() {
-    return cy.get("#gender-male");
+    return cy.selfHeal("#gender-male", "male gender radio button");
   }
 
   get genderFemaleRadio() {
-    return cy.get("#gender-female");
+    return cy.selfHeal("#gender-female", "female gender radio button");
   }
 
   get firstNameInput() {
-    return cy.get("#FirstName");
+    return cy.selfHeal("#FirstName", "first name input field");
   }
 
   get lastNameInput() {
-    return cy.get("#LastName");
+    return cy.selfHeal("#LastName", "last name input field");
   }
 
   get emailInput() {
-    return cy.get("#Email");
+    return cy.selfHeal("#Email", "email address input field");
   }
 
-  // Note: Company and Newsletter fields are not present in this demo environment
-  // They are conditionally checked before interacting
-
   get passwordInput() {
-    return cy.get("#Password");
+    return cy.selfHeal("#Password", "password input field");
   }
 
   get confirmPasswordInput() {
-    return cy.get("#ConfirmPassword");
+    return cy.selfHeal("#ConfirmPassword", "confirm password input field");
   }
 
   get registerButton() {
-    return cy.get("#register-button");
+    return cy.selfHeal("#register-button", "register submit button");
   }
 
   get validationSummary() {
-    return cy.get(".validation-summary-errors");
+    return cy.selfHeal(".validation-summary-errors", "registration validation error summary");
   }
 
   get fieldValidationErrors() {
-    return cy.get(".field-validation-error");
+    return cy.selfHeal(".field-validation-error", "field level validation error messages");
   }
 
   get registrationResultMessage() {
-    return cy.get(".result");
+    return cy.selfHeal(".result", "registration success result message");
   }
 
   get continueButton() {
-    // class="button-1 register-continue-button"
-    return cy.get(".register-continue-button");
+    return cy.selfHeal(".register-continue-button", "register continue button");
   }
 
   get registerTitle() {
-    return cy.get(".page-title");
+    return cy.selfHeal(".page-title", "register page title");
   }
 
   // ─── Actions ──────────────────────────────────────────────────────────────
@@ -98,7 +96,7 @@ class RegisterPage extends BasePage {
     // Company field may not exist on all environments — skip gracefully
     cy.get("body").then(($body) => {
       if ($body.find("#Company").length > 0) {
-        cy.get("#Company").clear().type(company);
+        cy.selfHeal("#Company", "company name input field").clear().type(company);
       } else {
         cy.log("⚠️ Company field not found on this environment — skipping");
       }
@@ -111,9 +109,9 @@ class RegisterPage extends BasePage {
     cy.get("body").then(($body) => {
       if ($body.find("#Newsletter").length > 0) {
         if (subscribe) {
-          cy.get("#Newsletter").check();
+          cy.selfHeal("#Newsletter", "newsletter subscription checkbox").check();
         } else {
-          cy.get("#Newsletter").uncheck();
+          cy.selfHeal("#Newsletter", "newsletter subscription checkbox").uncheck();
         }
       } else {
         cy.log("⚠️ Newsletter checkbox not found on this environment — skipping");
@@ -186,9 +184,7 @@ class RegisterPage extends BasePage {
   }
 
   verifyValidationErrors() {
-    // The site shows field-level errors (e.g. "First name is required.")
-    // NOT a .validation-summary-errors div for most validation failures
-    cy.get(".field-validation-error").should("be.visible");
+    this.fieldValidationErrors.should("be.visible");
     return this;
   }
 
@@ -209,9 +205,9 @@ class RegisterPage extends BasePage {
     // Fallback: also check validation summary
     cy.get("body").then(($body) => {
       if ($body.find(".field-validation-error").length > 0) {
-        cy.get(".field-validation-error").should("be.visible");
+        this.fieldValidationErrors.should("be.visible");
       } else {
-        cy.get(".validation-summary-errors").should("be.visible");
+        this.validationSummary.should("be.visible");
       }
     });
     return this;

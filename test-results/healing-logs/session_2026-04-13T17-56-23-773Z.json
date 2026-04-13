@@ -1,0 +1,110 @@
+[
+  {
+    "timestamp": "2026-04-13T17:56:33.784Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:56:33.785Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:56:33.798Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:56:47.288Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:56:47.289Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:56:47.301Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:57:00.755Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:57:00.757Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:57:00.768Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:57:14.036Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:57:14.037Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:57:14.046Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:57:27.114Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:57:27.115Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:57:27.126Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:57:40.597Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:57:40.598Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:57:40.610Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#topcartlink\""
+  }
+]

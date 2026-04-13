@@ -1,0 +1,61 @@
+[
+  {
+    "timestamp": "2026-04-13T18:49:37.756Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:49:37.759Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 1 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T18:49:47.578Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GeminiClient] Malformed JSON in response: \"{\n  \"candidates\": [\n    {\n      \"selector\": \"input[type=\\\"submit\\\"][value=\\\"Log in\\\"]\",\n      \"confidence\": \"HIGH\"\n    }\" — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T18:49:47.578Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 1"
+  },
+  {
+    "timestamp": "2026-04-13T18:50:02.756Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:50:02.758Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 1 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T18:50:16.992Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GeminiClient] Malformed JSON in response: \"{\n  \"candidates\": [\n    {\n      \"selector\": \"input[type=\\\"submit\\\"][value=\\\"Log in\\\"]\",\n      \"confidence\": \"HIGH\"\n    }\" — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T18:50:16.993Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 1"
+  },
+  {
+    "timestamp": "2026-04-13T18:50:31.358Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:50:31.360Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 1 candidates"
+  }
+]

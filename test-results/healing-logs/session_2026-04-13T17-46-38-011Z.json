@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp": "2026-04-13T17:46:48.250Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Emal-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:46:48.252Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 6 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T17:46:48.953Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods. — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T17:46:48.953Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 6"
+  },
+  {
+    "timestamp": "2026-04-13T17:46:48.968Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [HEURISTIC/MEDIUM]: \"#Emal-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:47:02.886Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Emal-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:47:02.887Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Emal-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:47:02.903Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Emal-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:47:16.492Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Emal-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:47:16.493Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Emal-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:47:16.518Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Emal-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:47:29.805Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Emal-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:47:29.805Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Emal-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:47:29.820Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Emal-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:47:43.208Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Emal-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:47:43.209Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Emal-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:47:43.222Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Emal-v1\" → \"#topcartlink\""
+  }
+]

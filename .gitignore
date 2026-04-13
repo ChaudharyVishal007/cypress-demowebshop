@@ -7,3 +7,16 @@ allure-results/
 allure-report/
 .DS_Store
 *.log
+
+# ── API Tests (Java/Maven) ──────────────────────
+api-tests/target/
+api-tests/allure-results/
+
+# ── Unified Report Pipeline ─────────────────────
+merged-allure-results/
+
+# ── Allure History (local only) ─────────────────
+allure-history/
+history.jsonl
+.env
+.env.example

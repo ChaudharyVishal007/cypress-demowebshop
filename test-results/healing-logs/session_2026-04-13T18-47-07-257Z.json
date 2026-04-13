@@ -1,0 +1,33 @@
+[
+  {
+    "timestamp": "2026-04-13T18:47:22.001Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:47:22.003Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 1 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T18:47:30.020Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: Timeout after 8000ms — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T18:47:30.020Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 1"
+  },
+  {
+    "timestamp": "2026-04-13T18:47:44.973Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  }
+]

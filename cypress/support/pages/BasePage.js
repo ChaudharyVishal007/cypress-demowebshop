@@ -17,33 +17,35 @@ class BasePage {
   }
 
   // ─── Element Interactions ─────────────────────────────────────────────────
+  // All methods use cy.selfHeal() which transparently applies the healing flow:
+  //   Original selector → Cache → Heuristics → Gemini AI → Error
 
-  getElement(selector) {
-    return cy.get(selector);
+  getElement(selector, hint) {
+    return cy.selfHeal(selector, hint);
   }
 
-  clickElement(selector) {
-    cy.get(selector).should("be.visible").click();
+  clickElement(selector, hint) {
+    cy.selfHeal(selector, hint).should("be.visible").click();
     return this;
   }
 
-  typeInField(selector, text, options = {}) {
-    cy.get(selector).should("be.visible").clear().type(text, options);
+  typeInField(selector, text, options = {}, hint) {
+    cy.selfHeal(selector, hint).should("be.visible").clear().type(text, options);
     return this;
   }
 
-  selectDropdown(selector, value) {
-    cy.get(selector).select(value);
+  selectDropdown(selector, value, hint) {
+    cy.selfHeal(selector, hint).select(value);
     return this;
   }
 
-  checkCheckbox(selector) {
-    cy.get(selector).check();
+  checkCheckbox(selector, hint) {
+    cy.selfHeal(selector, hint).check();
     return this;
   }
 
-  uncheckCheckbox(selector) {
-    cy.get(selector).uncheck();
+  uncheckCheckbox(selector, hint) {
+    cy.selfHeal(selector, hint).uncheck();
     return this;
   }
 

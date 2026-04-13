@@ -17,26 +17,34 @@
     "cy:run:regression": "cypress run --env tags=regression",
     "cy:report": "npx mochawesome-merge cypress/reports/json/*.json -o cypress/reports/merged.json && npx marge cypress/reports/merged.json -f report -o cypress/reports/html",
     "cy:clean": "rm -rf cypress/reports cypress/screenshots cypress/videos allure-results allure-report",
-
-    "allure:clean": "rm -rf allure-results allure-report",
+    "allure:clean": "rm -rf allure-results allure-report merged-allure-results",
     "allure:generate": "npx allure generate allure-results -o allure-report",
     "allure:open": "npx allure open allure-report",
     "allure:report": "npm run allure:generate && npm run allure:open",
     "test:allure": "npm run allure:clean && cypress run && npm run allure:report",
-
+    "api:test": "cd api-tests && mvn test -q",
+    "api:clean": "rm -rf api-tests/allure-results api-tests/target",
+    "api:test:verbose": "cd api-tests && mvn test",
+    "merge:report": "node scripts/merge-and-report.js",
+    "merge:open": "npm run merge:report && npm run allure:open",
+    "test:all": "npm run allure:clean && npm run api:clean && cypress run ; npm run api:test ; npm run merge:report && npm run allure:open",
+    "test:all:no-open": "npm run allure:clean && npm run api:clean && cypress run ; npm run api:test ; npm run merge:report",
     "allure:run": "node scripts/allure-history.js",
     "allure:run:auth": "node scripts/allure-history.js --spec 'cypress/e2e/auth/**/*.cy.js'",
     "allure:run:smoke": "node scripts/allure-history.js --env tags=smoke",
     "allure:run:regression": "node scripts/allure-history.js --env tags=regression",
     "allure:run:login": "node scripts/allure-history.js --spec 'cypress/e2e/auth/login.cy.js'",
     "allure:run:register": "node scripts/allure-history.js --spec 'cypress/e2e/auth/register.cy.js'",
-
     "allure:history:list": "ls -la allure-history/ 2>/dev/null || echo 'No history yet — run npm run allure:run first'",
     "allure:history:clean": "rm -rf allure-history && echo 'History cleared.'"
   },
   "dependencies": {
     "@faker-js/faker": "^8.3.1",
-    "cypress": "^13.6.0"
+    "@google/generative-ai": "^0.21.0",
+    "css-select": "^7.0.0",
+    "cypress": "^13.6.0",
+    "dotenv": "^16.4.5",
+    "htmlparser2": "^12.0.0"
   },
   "devDependencies": {
     "@bahmutov/cy-api": "^2.2.10",

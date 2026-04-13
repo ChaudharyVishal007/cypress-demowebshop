@@ -1,0 +1,120 @@
+[
+  {
+    "timestamp": "2026-04-13T18:40:02.489Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:40:02.490Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:40:02.503Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:40:02.505Z",
+    "level": "INFO",
+    "message": "✅ 🚀 Source Code Auto-Patched permanently in: LoginPage.js"
+  },
+  {
+    "timestamp": "2026-04-13T18:40:03.093Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Password-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:40:03.094Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Password-v1\" → \"#Password\""
+  },
+  {
+    "timestamp": "2026-04-13T18:40:03.114Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Password-v1\" → \"#Password\""
+  },
+  {
+    "timestamp": "2026-04-13T18:40:03.115Z",
+    "level": "INFO",
+    "message": "✅ 🚀 Source Code Auto-Patched permanently in: LoginPage.js"
+  },
+  {
+    "timestamp": "2026-04-13T18:40:03.556Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:40:03.558Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 1 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T18:40:07.724Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GeminiClient] Cannot parse JSON from response: \"{\n  \"candidates\" — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T18:40:07.724Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 1"
+  },
+  {
+    "timestamp": "2026-04-13T18:40:21.279Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:40:21.281Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:40:21.293Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:40:21.938Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Password-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:40:21.938Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Password-v1\" → \"#Password\""
+  },
+  {
+    "timestamp": "2026-04-13T18:40:21.951Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Password-v1\" → \"#Password\""
+  },
+  {
+    "timestamp": "2026-04-13T18:40:22.323Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:40:22.323Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 1 candidates"
+  }
+]

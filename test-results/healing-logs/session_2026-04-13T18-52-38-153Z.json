@@ -1,0 +1,251 @@
+[
+  {
+    "timestamp": "2026-04-13T18:52:48.527Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:52:48.533Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 1 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T18:52:57.521Z",
+    "level": "INFO",
+    "message": "✅ 🤖 AI suggested: \"input[type=\"submit\"][value=\"Log in\"]\" [MEDIUM]"
+  },
+  {
+    "timestamp": "2026-04-13T18:52:57.522Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 2"
+  },
+  {
+    "timestamp": "2026-04-13T18:52:57.539Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [AI/MEDIUM]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:52:57.542Z",
+    "level": "INFO",
+    "message": "✅ 🚀 Source Code Auto-Patched permanently in: LoginPage.js"
+  },
+  {
+    "timestamp": "2026-04-13T18:53:01.682Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:01.683Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:01.691Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:04.838Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:04.839Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:04.845Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:09.072Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:09.073Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:09.089Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:13.521Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:13.521Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:13.534Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:18.690Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:18.690Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:18.697Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:20.288Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:20.289Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:20.296Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:22.026Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:22.027Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:22.033Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:24.339Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:24.339Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:24.352Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:26.636Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:26.637Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:26.643Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:29.152Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:29.152Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:29.159Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:30.704Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:30.705Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:30.714Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:36.679Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \".login-button-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:53:36.680Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  },
+  {
+    "timestamp": "2026-04-13T18:53:36.686Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \".login-button-v1\" → \"input[type=\"submit\"][value=\"Log in\"]\""
+  }
+]

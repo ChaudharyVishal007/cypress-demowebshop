@@ -1,0 +1,33 @@
+[
+  {
+    "timestamp": "2026-04-13T19:29:55.139Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#RememberMe-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:29:55.140Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 2 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T19:30:17.343Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GeminiClient] Failed after 2 attempts due to rate limiting or errors. — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T19:30:17.343Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 2"
+  },
+  {
+    "timestamp": "2026-04-13T19:30:31.446Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#RememberMe-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  }
+]

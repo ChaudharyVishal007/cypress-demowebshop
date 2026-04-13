@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="DemoWebShop API Test Suite" verbose="1" parallel="none">
+
+    <parameter name="baseUrl" value="http://demowebshop.tricentis.com"/>
+
+    <!-- ── Authentication API Tests ─────────────────────────────────── -->
+    <test name="Authentication API">
+        <classes>
+            <class name="com.demowebshop.api.tests.AuthApiTest"/>
+        </classes>
+    </test>
+
+    <!-- ── Product / Catalog API Tests ──────────────────────────────── -->
+    <test name="Product Catalog API">
+        <classes>
+            <class name="com.demowebshop.api.tests.ProductApiTest"/>
+        </classes>
+    </test>
+
+    <!-- ── Cart API Tests ───────────────────────────────────────────── -->
+    <test name="Cart API">
+        <classes>
+            <class name="com.demowebshop.api.tests.CartApiTest"/>
+        </classes>
+    </test>
+
+</suite>

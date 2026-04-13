@@ -1,0 +1,66 @@
+[
+  {
+    "timestamp": "2026-04-13T17:48:42.120Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:48:42.122Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 6 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T17:48:42.990Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods. — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T17:48:42.991Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 6"
+  },
+  {
+    "timestamp": "2026-04-13T17:48:43.003Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [HEURISTIC/MEDIUM]: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:48:56.595Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:48:56.596Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:48:56.606Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:49:10.035Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T17:49:10.036Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#topcartlink\""
+  },
+  {
+    "timestamp": "2026-04-13T17:49:10.050Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#topcartlink\""
+  }
+]

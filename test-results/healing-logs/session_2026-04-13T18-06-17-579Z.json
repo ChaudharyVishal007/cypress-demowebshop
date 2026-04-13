@@ -1,0 +1,210 @@
+[
+  {
+    "timestamp": "2026-04-13T18:06:27.796Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:06:27.798Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 2 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T18:06:31.094Z",
+    "level": "INFO",
+    "message": "✅ 🤖 AI suggested: \"#Email\" [HIGH]"
+  },
+  {
+    "timestamp": "2026-04-13T18:06:31.095Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 3"
+  },
+  {
+    "timestamp": "2026-04-13T18:06:31.110Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [AI/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:35.652Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:06:35.653Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:35.663Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:39.295Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:06:39.295Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:39.302Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:43.547Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:06:43.547Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:43.558Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:48.474Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:06:48.475Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:48.480Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:53.146Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:06:53.147Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:53.153Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:58.769Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:06:58.770Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:06:58.776Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:07:00.887Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:07:00.889Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:07:00.895Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:07:03.143Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:07:03.143Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:07:03.149Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:07:05.626Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:07:05.627Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:07:05.634Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:07:10.646Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T18:07:10.647Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T18:07:10.652Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  }
+]

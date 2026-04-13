@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+  testng-auth.xml — Auth/Login API tests only
+  Used by run-all-tests.sh for focused login testing
+-->
+<suite name="DemoWebShop API - Auth Tests Only" verbose="1" parallel="none">
+
+    <parameter name="baseUrl" value="http://demowebshop.tricentis.com"/>
+
+    <test name="Authentication API">
+        <classes>
+            <class name="com.demowebshop.api.tests.AuthApiTest"/>
+        </classes>
+    </test>
+
+</suite>

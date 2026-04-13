@@ -1,5 +1,8 @@
-const { defineConfig } = require("cypress");
-const { allureCypress } = require("allure-cypress/reporter");
+require('dotenv').config();   // loads GEMINI_API_KEY from .env
+
+const { defineConfig }    = require("cypress");
+const { allureCypress }   = require("allure-cypress/reporter");
+const healingEngine       = require("./cypress/plugins/selfHealing/healingEngine");
 
 module.exports = defineConfig({
   // Reporter config must be at root level in Cypress 13
@@ -62,6 +65,7 @@ module.exports = defineConfig({
       require("cypress-mochawesome-reporter/plugin")(on);
 
       on("task", {
+        // ─── Existing tasks ──────────────────────────────────────────
         log(message) {
           console.log(message);
           return null;
@@ -70,6 +74,19 @@ module.exports = defineConfig({
           console.table(message);
           return null;
         },
+
+        // ─── AI Self-Healing tasks ────────────────────────────────────
+        //
+        // selfHeal:run      → runs Cache → Heuristic → Gemini AI pipeline
+        //                     returns { candidates: [{selector, layer, confidence}] }
+        //
+        // selfHeal:cache    → persists a successful heal to healedLocators.json
+        //
+        // selfHeal:invalidate → removes a stale cache entry
+        //
+        'selfHeal:run':        (payload) => healingEngine.runHealingPipeline(payload),
+        'selfHeal:cache':      (payload) => healingEngine.cacheHealedLocator(payload),
+        'selfHeal:invalidate': (payload) => healingEngine.invalidateCacheEntry(payload),
       });
 
       return config;

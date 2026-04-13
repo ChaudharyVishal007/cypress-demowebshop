@@ -1,0 +1,238 @@
+[
+  {
+    "timestamp": "2026-04-13T19:00:14.190Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:00:14.192Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:00:14.202Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:00:14.204Z",
+    "level": "INFO",
+    "message": "✅ 🚀 Source Code Auto-Patched permanently in: LoginPage.js"
+  },
+  {
+    "timestamp": "2026-04-13T19:00:14.844Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Password₹\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:00:14.845Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 2 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T19:00:17.781Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T19:00:17.781Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 2"
+  },
+  {
+    "timestamp": "2026-04-13T19:00:31.356Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:00:31.357Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:00:31.369Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:00:32.006Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Password₹\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:00:32.007Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 2 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T19:00:34.514Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T19:00:34.514Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 2"
+  },
+  {
+    "timestamp": "2026-04-13T19:00:47.868Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:00:47.868Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:00:47.879Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:00:48.513Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Password₹\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:00:48.514Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 2 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T19:00:50.422Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T19:00:50.422Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 2"
+  },
+  {
+    "timestamp": "2026-04-13T19:01:03.972Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:01:03.973Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:01:03.982Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:01:04.619Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Password₹\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:01:04.620Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 2 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T19:01:07.124Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later. — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T19:01:07.124Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 2"
+  },
+  {
+    "timestamp": "2026-04-13T19:01:20.402Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:01:20.404Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:01:20.414Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:01:21.052Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Password₹\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:01:21.052Z",
+    "level": "INFO",
+    "message": "🔧 Heuristic produced 2 candidates"
+  },
+  {
+    "timestamp": "2026-04-13T19:01:21.983Z",
+    "level": "WARN",
+    "message": "Gemini unavailable: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 38.29291988s. [{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"38s\"}] — falling back to heuristics"
+  },
+  {
+    "timestamp": "2026-04-13T19:01:21.984Z",
+    "level": "INFO",
+    "message": "Total candidates to validate: 2"
+  },
+  {
+    "timestamp": "2026-04-13T19:01:35.266Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Email-v1\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T19:01:35.267Z",
+    "level": "INFO",
+    "message": "⚡ Cache hit: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:01:35.279Z",
+    "level": "INFO",
+    "message": "✅ 📦 Cached [CACHE/HIGH]: \"#Email-v1\" → \"#Email\""
+  },
+  {
+    "timestamp": "2026-04-13T19:01:35.917Z",
+    "level": "INFO",
+    "message": "🔍 Healing started for: \"#Password₹\"",
+    "meta": {
+      "url": "https://demowebshop.tricentis.com/__cypress/iframes/cypress%2Fe2e%2Fauth%2Flogin.cy.js?browserFamily=chromium"
+    }
+  }
+]
