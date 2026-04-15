@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/ChaudharyVishal007/cypress-demowebshop.git'
+                git branch: 'main', url: 'https://github.com/ChaudharyVishal007/cypress-demowebshop.git'
             }
         }
 
@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('Run Tests + Generate Allure') {
+        stage('Run Tests + Allure') {
             steps {
                 sh '''
                 docker run --rm \
