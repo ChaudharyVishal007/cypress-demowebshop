@@ -49,7 +49,7 @@ function sanitizeSelector(sel) {
  */
 async function runHealingPipeline({ selector: rawSelector, domSnippet, hint, url }) {
   const selector = sanitizeSelector(rawSelector);
-  
+
   if (selector !== rawSelector) {
     logger.warn(`🧹 Sanitized invalid characters from selector: "${rawSelector}" → "${selector}"`);
   }
@@ -86,7 +86,7 @@ async function runHealingPipeline({ selector: rawSelector, domSnippet, hint, url
         geminiClient.generateHealingSelector(selector, domSnippet, hint),
         GEMINI_TIMEOUT_MS
       );
-  
+
       if (aiResult?.candidates && aiResult.candidates.length > 0) {
         // AI returns an ordered array of alternatives in the new Gemni API. We prepend all of them natively.
         const mappedCandidates = aiResult.candidates.map(c => ({
@@ -121,7 +121,7 @@ async function runHealingPipeline({ selector: rawSelector, domSnippet, hint, url
 function cacheHealedLocator({ original: rawOriginal, healed: rawHealed, layer, confidence, source = 'AI' }) {
   const original = sanitizeSelector(rawOriginal);
   const healed = sanitizeSelector(rawHealed);
-  
+
   if (confidence === 'LOW' || confidence === 'MEDIUM') {
     logger.info(`📦 Skip caching [${layer}/${confidence}]: "${original}". We only cache HIGH confidence heals permanently.`);
   } else {
