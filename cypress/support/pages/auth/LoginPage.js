@@ -26,7 +26,7 @@ class LoginPage extends BasePage {
   }
 
   get rememberMeCheckbox() {
-    return cy.selfHeal("#RememberMe-v1", "remember me checkbox");
+    return cy.selfHeal("#RememberMe", "remember me checkbox");
   }
 
   get forgotPasswordLink() {
