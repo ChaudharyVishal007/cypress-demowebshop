@@ -79,10 +79,9 @@ function run(cmd, args = [], opts = {}) {
   console.log(`\n▶  ${cmd} ${args.join(" ")}\n`);
   const result = spawnSync(cmd, args, {
     stdio: "inherit",
-    shell: true,
     cwd: ROOT,
-    ...opts,
   });
+
   if (result.status !== 0 && result.status !== null) {
     // Don't throw for cypress (tests may fail but we still want reports)
     if (cmd !== "npx" || !args.includes("cypress")) {
