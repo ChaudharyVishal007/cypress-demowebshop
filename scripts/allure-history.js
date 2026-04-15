@@ -16,18 +16,18 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
-const fs   = require("fs");
+const fs = require("fs");
 const path = require("path");
 const { execSync, spawnSync } = require("child_process");
 
 // ─── Paths ────────────────────────────────────────────────────────────────────
-const ROOT             = path.resolve(__dirname, "..");
-const RESULTS_DIR      = path.join(ROOT, "allure-results");
-const REPORT_DIR       = path.join(ROOT, "allure-report");
-const HISTORY_BASE     = path.join(ROOT, "allure-history");
-const LAST_HISTORY     = path.join(HISTORY_BASE, "last-history");
-const CATEGORIES_SRC   = path.join(ROOT, "cypress", "fixtures", "categories.json");
-const HISTORY_ZIP      = path.join(HISTORY_BASE, "history.zip");
+const ROOT = path.resolve(__dirname, "..");
+const RESULTS_DIR = path.join(ROOT, "allure-results");
+const REPORT_DIR = path.join(ROOT, "allure-report");
+const HISTORY_BASE = path.join(ROOT, "allure-history");
+const LAST_HISTORY = path.join(HISTORY_BASE, "last-history");
+const CATEGORIES_SRC = path.join(ROOT, "cypress", "fixtures", "categories.json");
+const HISTORY_ZIP = path.join(HISTORY_BASE, "history.zip");
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -36,7 +36,7 @@ function copyDir(src, dest) {
   if (!fs.existsSync(src)) return;
   fs.mkdirSync(dest, { recursive: true });
   for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
-    const srcPath  = path.join(src, entry.name);
+    const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
     if (entry.isDirectory()) {
       copyDir(srcPath, destPath);
@@ -133,11 +133,32 @@ async function main() {
 
   // ── 3. Run Cypress tests ───────────────────────────────────────────────────
   section("STEP 3 — Running Cypress tests");
-  const cypressExitCode = run("npx", ["cypress", "run", ...extraArgs]);
+
+  // 🔥 Robust argument handling (works in Docker + Jenkins)
+  const rawArgs = process.argv.slice(2);
+
+  // Normalize args (handle both --spec=value and --spec value)
+  const parsedArgs = [];
+
+  for (let i = 0; i < rawArgs.length; i++) {
+    if (rawArgs[i].startsWith('--spec=')) {
+      parsedArgs.push('--spec', rawArgs[i].split('=')[1]);
+    } else if (rawArgs[i] === '--spec') {
+      parsedArgs.push('--spec', rawArgs[i + 1]);
+      i++;
+    } else {
+      parsedArgs.push(rawArgs[i]);
+    }
+  }
+
+  console.log("👉 Forwarding args to Cypress:", parsedArgs.join(" "));
+
+  // 🚀 FINAL COMMAND
+  const cypressExitCode = run("npx", ["cypress", "run", ...parsedArgs]);
 
   // ── 4. Generate Allure report ──────────────────────────────────────────────
   section("STEP 4 — Generating Allure report");
-  
+
   // 4a. Restore previous history into results for trend analysis
   if (fs.existsSync(LAST_HISTORY)) {
     console.log("📂 Restoring previous history into results...");
@@ -184,7 +205,7 @@ async function main() {
 
   // ── 5. Archive current results with timestamp ──────────────────────────────
   section("STEP 5 — Archiving current run results");
-  const runLabel  = timestamp();
+  const runLabel = timestamp();
   const archiveDest = path.join(HISTORY_BASE, runLabel);
   fs.mkdirSync(archiveDest, { recursive: true });
   copyDir(RESULTS_DIR, archiveDest);
