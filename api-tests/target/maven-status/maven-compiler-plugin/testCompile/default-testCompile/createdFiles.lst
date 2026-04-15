@@ -1,0 +1,4 @@
+com/demowebshop/api/base/BaseTest.class
+com/demowebshop/api/tests/CartApiTest.class
+com/demowebshop/api/tests/ProductApiTest.class
+com/demowebshop/api/tests/AuthApiTest.class

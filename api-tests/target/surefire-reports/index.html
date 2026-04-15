@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" class="navigator-link">
+              <span class="suite-name border-passed">DemoWebShop API Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-DemoWebShop_API_Test_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-DemoWebShop_API_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-DemoWebShop_API_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-DemoWebShop_API_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-DemoWebShop_API_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-DemoWebShop_API_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-DemoWebShop_API_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">30 methods,   30 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" class="hide-methods passed suite-DemoWebShop_API_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-DemoWebShop_API_Test_Suite -->
+                      <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" class="show-methods passed suite-DemoWebShop_API_Test_Suite"> (show)</a> <!-- show-methods passed suite-DemoWebShop_API_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-DemoWebShop_API_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.CartApiTest" class="method navigator-link" hash-for-method="addBookToCartShouldNotReturn5xx">addBookToCartShouldNotReturn5xx</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.CartApiTest" class="method navigator-link" hash-for-method="addInvalidProductToCartShouldReturn404Or302">addInvalidProductToCartShouldReturn404Or302</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.CartApiTest" class="method navigator-link" hash-for-method="addSimpleProductToCartShouldSucceed">addSimpleProductToCartShouldSucceed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.CartApiTest" class="method navigator-link" hash-for-method="addToWishlistShouldNotReturn5xx">addToWishlistShouldNotReturn5xx</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="booksCatalogResponseTimeShouldBeAcceptable">booksCatalogResponseTimeShouldBeAcceptable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.CartApiTest" class="method navigator-link" hash-for-method="cartPageForGuestShouldShowEmptyCart">cartPageForGuestShouldShowEmptyCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.CartApiTest" class="method navigator-link" hash-for-method="cartPageShouldReturn200ForGuest">cartPageShouldReturn200ForGuest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="categoryPageShouldReturn200(Gift Cards, /gift-cards, Gift Cards)">categoryPageShouldReturn200(Gift Cards, /gift-cards, Gift Cards)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="categoryPageShouldReturn200(Computers, /computers, Computers)">categoryPageShouldReturn200(Computers, /computers, Computers)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="categoryPageShouldReturn200(Jewelry, /jewelry, Jewelry)">categoryPageShouldReturn200(Jewelry, /jewelry, Jewelry)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="categoryPageShouldReturn200(Electronics, /electronics, Electronics)">categoryPageShouldReturn200(Electronics, /electronics, Electronics)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="categoryPageShouldReturn200(Books, /books, Books)">categoryPageShouldReturn200(Books, /books, Books)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.CartApiTest" class="method navigator-link" hash-for-method="checkoutPageShouldRequireLogin">checkoutPageShouldRequireLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="homePageResponseTimeShouldBeAcceptable">homePageResponseTimeShouldBeAcceptable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="homePageShouldContainProducts">homePageShouldContainProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="homePageShouldReturn200">homePageShouldReturn200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.AuthApiTest" class="method navigator-link" hash-for-method="loginPageShouldReturn200">loginPageShouldReturn200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.AuthApiTest" class="method navigator-link" hash-for-method="loginWithEmptyCredentialsShouldShowValidation">loginWithEmptyCredentialsShouldShowValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.AuthApiTest" class="method navigator-link" hash-for-method="loginWithInvalidCredentialsShouldFail">loginWithInvalidCredentialsShouldFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.AuthApiTest" class="method navigator-link" hash-for-method="loginWithValidCredentialsShouldSucceed">loginWithValidCredentialsShouldSucceed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.AuthApiTest" class="method navigator-link" hash-for-method="loginWithWrongPasswordShouldFail">loginWithWrongPasswordShouldFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.AuthApiTest" class="method navigator-link" hash-for-method="passwordRecoveryPageShouldReturn200">passwordRecoveryPageShouldReturn200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="productDetailComputerShouldReturn200">productDetailComputerShouldReturn200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="productDetailFictionShouldReturn200">productDetailFictionShouldReturn200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.AuthApiTest" class="method navigator-link" hash-for-method="registerPageShouldReturn200">registerPageShouldReturn200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.AuthApiTest" class="method navigator-link" hash-for-method="registerWithMismatchedPasswordsShouldFail">registerWithMismatchedPasswordsShouldFail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="searchForBookShouldReturnResults">searchForBookShouldReturnResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="searchForNonExistentProductShouldShowNoResults">searchForNonExistentProductShouldShowNoResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.ProductApiTest" class="method navigator-link" hash-for-method="searchWithEmptyQueryShouldShowSearchPage">searchWithEmptyQueryShouldShowSearchPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-DemoWebShop_API_Test_Suite" title="com.demowebshop.api.tests.CartApiTest" class="method navigator-link" hash-for-method="wishlistPageShouldReturn200">wishlistPageShouldReturn200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-DemoWebShop_API_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-DemoWebShop_API_Test_Suite" class="panel DemoWebShop_API_Test_Suite">
+          <div class="suite-DemoWebShop_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demowebshop.api.tests.CartApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addBookToCartShouldNotReturn5xx">
+                  </a> <!-- addBookToCartShouldNotReturn5xx -->
+                  <span class="method-name">addBookToCartShouldNotReturn5xx</span>
+                  <em>
+(TC_API_CART_004 - Add book to cart should respond without server error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addInvalidProductToCartShouldReturn404Or302">
+                  </a> <!-- addInvalidProductToCartShouldReturn404Or302 -->
+                  <span class="method-name">addInvalidProductToCartShouldReturn404Or302</span>
+                  <em>
+(TC_API_CART_005 - Add to cart endpoint should reject invalid product ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addSimpleProductToCartShouldSucceed">
+                  </a> <!-- addSimpleProductToCartShouldSucceed -->
+                  <span class="method-name">addSimpleProductToCartShouldSucceed</span>
+                  <em>
+(TC_API_CART_003 - Add simple product to cart should return success response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToWishlistShouldNotReturn5xx">
+                  </a> <!-- addToWishlistShouldNotReturn5xx -->
+                  <span class="method-name">addToWishlistShouldNotReturn5xx</span>
+                  <em>
+(TC_API_CART_007 - Add to wishlist should respond without server error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cartPageForGuestShouldShowEmptyCart">
+                  </a> <!-- cartPageForGuestShouldShowEmptyCart -->
+                  <span class="method-name">cartPageForGuestShouldShowEmptyCart</span>
+                  <em>
+(TC_API_CART_002 - Cart page for guest should contain empty cart message or cart table)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cartPageShouldReturn200ForGuest">
+                  </a> <!-- cartPageShouldReturn200ForGuest -->
+                  <span class="method-name">cartPageShouldReturn200ForGuest</span>
+                  <em>
+(TC_API_CART_001 - Cart page should return HTTP 200 for guest user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutPageShouldRequireLogin">
+                  </a> <!-- checkoutPageShouldRequireLogin -->
+                  <span class="method-name">checkoutPageShouldRequireLogin</span>
+                  <em>
+(TC_API_CART_008 - Checkout page should redirect to login for guest user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wishlistPageShouldReturn200">
+                  </a> <!-- wishlistPageShouldReturn200 -->
+                  <span class="method-name">wishlistPageShouldReturn200</span>
+                  <em>
+(TC_API_CART_006 - Wishlist page should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoWebShop_API_Test_Suite-class-passed -->
+          <div class="suite-DemoWebShop_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demowebshop.api.tests.ProductApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="booksCatalogResponseTimeShouldBeAcceptable">
+                  </a> <!-- booksCatalogResponseTimeShouldBeAcceptable -->
+                  <span class="method-name">booksCatalogResponseTimeShouldBeAcceptable</span>
+                  <em>
+(TC_API_PROD_010 - Books catalog response time should be under 10 seconds)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="categoryPageShouldReturn200(Gift Cards, /gift-cards, Gift Cards)">
+                  </a> <!-- categoryPageShouldReturn200(Gift Cards, /gift-cards, Gift Cards) -->
+                  <span class="method-name">categoryPageShouldReturn200</span>
+                  <span class="parameters">(Gift Cards,/gift-cards,Gift Cards)</span>
+                  <em>
+(TC_API_PROD_003 - Category pages should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="categoryPageShouldReturn200(Computers, /computers, Computers)">
+                  </a> <!-- categoryPageShouldReturn200(Computers, /computers, Computers) -->
+                  <span class="method-name">categoryPageShouldReturn200</span>
+                  <span class="parameters">(Computers,/computers,Computers)</span>
+                  <em>
+(TC_API_PROD_003 - Category pages should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="categoryPageShouldReturn200(Jewelry, /jewelry, Jewelry)">
+                  </a> <!-- categoryPageShouldReturn200(Jewelry, /jewelry, Jewelry) -->
+                  <span class="method-name">categoryPageShouldReturn200</span>
+                  <span class="parameters">(Jewelry,/jewelry,Jewelry)</span>
+                  <em>
+(TC_API_PROD_003 - Category pages should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="categoryPageShouldReturn200(Electronics, /electronics, Electronics)">
+                  </a> <!-- categoryPageShouldReturn200(Electronics, /electronics, Electronics) -->
+                  <span class="method-name">categoryPageShouldReturn200</span>
+                  <span class="parameters">(Electronics,/electronics,Electronics)</span>
+                  <em>
+(TC_API_PROD_003 - Category pages should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="categoryPageShouldReturn200(Books, /books, Books)">
+                  </a> <!-- categoryPageShouldReturn200(Books, /books, Books) -->
+                  <span class="method-name">categoryPageShouldReturn200</span>
+                  <span class="parameters">(Books,/books,Books)</span>
+                  <em>
+(TC_API_PROD_003 - Category pages should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageResponseTimeShouldBeAcceptable">
+                  </a> <!-- homePageResponseTimeShouldBeAcceptable -->
+                  <span class="method-name">homePageResponseTimeShouldBeAcceptable</span>
+                  <em>
+(TC_API_PROD_009 - Home page response time should be under 10 seconds)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageShouldContainProducts">
+                  </a> <!-- homePageShouldContainProducts -->
+                  <span class="method-name">homePageShouldContainProducts</span>
+                  <em>
+(TC_API_PROD_002 - Home page should include product items in the response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageShouldReturn200">
+                  </a> <!-- homePageShouldReturn200 -->
+                  <span class="method-name">homePageShouldReturn200</span>
+                  <em>
+(TC_API_PROD_001 - Home page should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productDetailComputerShouldReturn200">
+                  </a> <!-- productDetailComputerShouldReturn200 -->
+                  <span class="method-name">productDetailComputerShouldReturn200</span>
+                  <em>
+(TC_API_PROD_005 - Product detail page (Build Your Own Computer) should return 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productDetailFictionShouldReturn200">
+                  </a> <!-- productDetailFictionShouldReturn200 -->
+                  <span class="method-name">productDetailFictionShouldReturn200</span>
+                  <em>
+(TC_API_PROD_004 - Product detail page (Fiction) should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchForBookShouldReturnResults">
+                  </a> <!-- searchForBookShouldReturnResults -->
+                  <span class="method-name">searchForBookShouldReturnResults</span>
+                  <em>
+(TC_API_PROD_006 - Search for 'book' should return results page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchForNonExistentProductShouldShowNoResults">
+                  </a> <!-- searchForNonExistentProductShouldShowNoResults -->
+                  <span class="method-name">searchForNonExistentProductShouldShowNoResults</span>
+                  <em>
+(TC_API_PROD_008 - Search for non-existent product should return no results message)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchWithEmptyQueryShouldShowSearchPage">
+                  </a> <!-- searchWithEmptyQueryShouldShowSearchPage -->
+                  <span class="method-name">searchWithEmptyQueryShouldShowSearchPage</span>
+                  <em>
+(TC_API_PROD_007 - Search for empty query should show search page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoWebShop_API_Test_Suite-class-passed -->
+          <div class="suite-DemoWebShop_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demowebshop.api.tests.AuthApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageShouldReturn200">
+                  </a> <!-- loginPageShouldReturn200 -->
+                  <span class="method-name">loginPageShouldReturn200</span>
+                  <em>
+(TC_API_AUTH_001 - Login page should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithEmptyCredentialsShouldShowValidation">
+                  </a> <!-- loginWithEmptyCredentialsShouldShowValidation -->
+                  <span class="method-name">loginWithEmptyCredentialsShouldShowValidation</span>
+                  <em>
+(TC_API_AUTH_004 - Login with empty credentials should return validation error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidCredentialsShouldFail">
+                  </a> <!-- loginWithInvalidCredentialsShouldFail -->
+                  <span class="method-name">loginWithInvalidCredentialsShouldFail</span>
+                  <em>
+(TC_API_AUTH_003 - Login with invalid credentials should return error message)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentialsShouldSucceed">
+                  </a> <!-- loginWithValidCredentialsShouldSucceed -->
+                  <span class="method-name">loginWithValidCredentialsShouldSucceed</span>
+                  <em>
+(TC_API_AUTH_002 - Login with valid credentials should redirect to home)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithWrongPasswordShouldFail">
+                  </a> <!-- loginWithWrongPasswordShouldFail -->
+                  <span class="method-name">loginWithWrongPasswordShouldFail</span>
+                  <em>
+(TC_API_AUTH_005 - Login with wrong password should return error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="passwordRecoveryPageShouldReturn200">
+                  </a> <!-- passwordRecoveryPageShouldReturn200 -->
+                  <span class="method-name">passwordRecoveryPageShouldReturn200</span>
+                  <em>
+(TC_API_AUTH_008 - Password recovery page should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerPageShouldReturn200">
+                  </a> <!-- registerPageShouldReturn200 -->
+                  <span class="method-name">registerPageShouldReturn200</span>
+                  <em>
+(TC_API_AUTH_006 - Register page should return HTTP 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithMismatchedPasswordsShouldFail">
+                  </a> <!-- registerWithMismatchedPasswordsShouldFail -->
+                  <span class="method-name">registerWithMismatchedPasswordsShouldFail</span>
+                  <em>
+(TC_API_AUTH_007 - Registration with mismatched passwords should not cause server error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-DemoWebShop_API_Test_Suite-class-passed -->
+        </div> <!-- panel DemoWebShop_API_Test_Suite -->
+        <div panel-name="test-xml-DemoWebShop_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/vishal/Documents/cypress-demowebshop/api-tests/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;DemoWebShop API Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;baseUrl&quot; value=&quot;http://demowebshop.tricentis.com&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Authentication API&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demowebshop.api.tests.AuthApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Authentication API --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Product Catalog API&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demowebshop.api.tests.ProductApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Product Catalog API --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Cart API&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demowebshop.api.tests.CartApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Cart API --&gt;
+&lt;/suite&gt; &lt;!-- DemoWebShop API Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-DemoWebShop_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for DemoWebShop API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Authentication API (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Product Catalog API (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Cart API (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-DemoWebShop_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for DemoWebShop API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-DemoWebShop_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for DemoWebShop API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_DemoWebShop_API_Test_Suite');
+function tableData_DemoWebShop_API_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(30);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginPageShouldReturn200')
+data.setCell(0, 2, 'com.demowebshop.api.tests.AuthApiTest')
+data.setCell(0, 3, 3884);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'productDetailFictionShouldReturn200')
+data.setCell(1, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(1, 3, 2239);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'homePageShouldReturn200')
+data.setCell(2, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(2, 3, 1876);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'productDetailComputerShouldReturn200')
+data.setCell(3, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(3, 3, 1828);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'searchForNonExistentProductShouldShowNoResults')
+data.setCell(4, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(4, 3, 1805);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchWithEmptyQueryShouldShowSearchPage')
+data.setCell(5, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(5, 3, 1756);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'cartPageShouldReturn200ForGuest')
+data.setCell(6, 2, 'com.demowebshop.api.tests.CartApiTest')
+data.setCell(6, 3, 1641);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'homePageShouldContainProducts')
+data.setCell(7, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(7, 3, 1635);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'searchForBookShouldReturnResults')
+data.setCell(8, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(8, 3, 1633);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'categoryPageShouldReturn200')
+data.setCell(9, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(9, 3, 1540);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'categoryPageShouldReturn200')
+data.setCell(10, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(10, 3, 1528);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'cartPageForGuestShouldShowEmptyCart')
+data.setCell(11, 2, 'com.demowebshop.api.tests.CartApiTest')
+data.setCell(11, 3, 1527);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'categoryPageShouldReturn200')
+data.setCell(12, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(12, 3, 1524);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'categoryPageShouldReturn200')
+data.setCell(13, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(13, 3, 1509);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'booksCatalogResponseTimeShouldBeAcceptable')
+data.setCell(14, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(14, 3, 1507);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'registerPageShouldReturn200')
+data.setCell(15, 2, 'com.demowebshop.api.tests.AuthApiTest')
+data.setCell(15, 3, 1503);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'categoryPageShouldReturn200')
+data.setCell(16, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(16, 3, 1432);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'wishlistPageShouldReturn200')
+data.setCell(17, 2, 'com.demowebshop.api.tests.CartApiTest')
+data.setCell(17, 3, 1405);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'homePageResponseTimeShouldBeAcceptable')
+data.setCell(18, 2, 'com.demowebshop.api.tests.ProductApiTest')
+data.setCell(18, 3, 1358);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'passwordRecoveryPageShouldReturn200')
+data.setCell(19, 2, 'com.demowebshop.api.tests.AuthApiTest')
+data.setCell(19, 3, 1318);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'addSimpleProductToCartShouldSucceed')
+data.setCell(20, 2, 'com.demowebshop.api.tests.CartApiTest')
+data.setCell(20, 3, 925);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'loginWithEmptyCredentialsShouldShowValidation')
+data.setCell(21, 2, 'com.demowebshop.api.tests.AuthApiTest')
+data.setCell(21, 3, 845);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'addBookToCartShouldNotReturn5xx')
+data.setCell(22, 2, 'com.demowebshop.api.tests.CartApiTest')
+data.setCell(22, 3, 652);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'loginWithInvalidCredentialsShouldFail')
+data.setCell(23, 2, 'com.demowebshop.api.tests.AuthApiTest')
+data.setCell(23, 3, 639);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'loginWithWrongPasswordShouldFail')
+data.setCell(24, 2, 'com.demowebshop.api.tests.AuthApiTest')
+data.setCell(24, 3, 633);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'addToWishlistShouldNotReturn5xx')
+data.setCell(25, 2, 'com.demowebshop.api.tests.CartApiTest')
+data.setCell(25, 3, 588);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'registerWithMismatchedPasswordsShouldFail')
+data.setCell(26, 2, 'com.demowebshop.api.tests.AuthApiTest')
+data.setCell(26, 3, 582);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'addInvalidProductToCartShouldReturn404Or302')
+data.setCell(27, 2, 'com.demowebshop.api.tests.CartApiTest')
+data.setCell(27, 3, 569);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'checkoutPageShouldRequireLogin')
+data.setCell(28, 2, 'com.demowebshop.api.tests.CartApiTest')
+data.setCell(28, 3, 542);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'loginWithValidCredentialsShouldSucceed')
+data.setCell(29, 2, 'com.demowebshop.api.tests.AuthApiTest')
+data.setCell(29, 3, 541);
+window.suiteTableData['DemoWebShop_API_Test_Suite']= { tableData: data, tableDiv: 'times-div-DemoWebShop_API_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <div id="times-div-DemoWebShop_API_Test_Suite">
+              </div> <!-- times-div-DemoWebShop_API_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-DemoWebShop_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for DemoWebShop API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-DemoWebShop_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-DemoWebShop_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.api.tests.CartApiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.api.tests.AuthApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginPageShouldReturn200</span>
+                <span class="method-start">720 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithEmptyCredentialsShouldShowValidation</span>
+                <span class="method-start">4659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidCredentialsShouldFail</span>
+                <span class="method-start">5508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredentialsShouldSucceed</span>
+                <span class="method-start">6148 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithWrongPasswordShouldFail</span>
+                <span class="method-start">6691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">passwordRecoveryPageShouldReturn200</span>
+                <span class="method-start">7325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerPageShouldReturn200</span>
+                <span class="method-start">8644 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithMismatchedPasswordsShouldFail</span>
+                <span class="method-start">10148 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.api.tests.ProductApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">booksCatalogResponseTimeShouldBeAcceptable</span>
+                <span class="method-start">10768 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">categoryPageShouldReturn200(Books, /books, Books)</span>
+                <span class="method-start">12280 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">categoryPageShouldReturn200(Electronics, /electronics, Electronics)</span>
+                <span class="method-start">13713 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">categoryPageShouldReturn200(Computers, /computers, Computers)</span>
+                <span class="method-start">15238 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">categoryPageShouldReturn200(Jewelry, /jewelry, Jewelry)</span>
+                <span class="method-start">16780 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">categoryPageShouldReturn200(Gift Cards, /gift-cards, Gift Cards)</span>
+                <span class="method-start">18309 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homePageResponseTimeShouldBeAcceptable</span>
+                <span class="method-start">19820 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homePageShouldContainProducts</span>
+                <span class="method-start">21180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homePageShouldReturn200</span>
+                <span class="method-start">22816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productDetailComputerShouldReturn200</span>
+                <span class="method-start">24694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productDetailFictionShouldReturn200</span>
+                <span class="method-start">26523 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchForBookShouldReturnResults</span>
+                <span class="method-start">28764 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchForNonExistentProductShouldShowNoResults</span>
+                <span class="method-start">30398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchWithEmptyQueryShouldShowSearchPage</span>
+                <span class="method-start">32205 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demowebshop.api.tests.CartApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addBookToCartShouldNotReturn5xx</span>
+                <span class="method-start">33968 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addInvalidProductToCartShouldReturn404Or302</span>
+                <span class="method-start">34624 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addSimpleProductToCartShouldSucceed</span>
+                <span class="method-start">35193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addToWishlistShouldNotReturn5xx</span>
+                <span class="method-start">36119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cartPageForGuestShouldShowEmptyCart</span>
+                <span class="method-start">36708 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cartPageShouldReturn200ForGuest</span>
+                <span class="method-start">38237 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkoutPageShouldRequireLogin</span>
+                <span class="method-start">39880 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wishlistPageShouldReturn200</span>
+                <span class="method-start">40424 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

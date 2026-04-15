@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoWebShop API Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="baseUrl" value="http://demowebshop.tricentis.com"/>
+  <test thread-count="5" name="Authentication API(failed)" verbose="0">
+    <classes>
+      <class name="com.demowebshop.api.tests.AuthApiTest">
+        <methods>
+          <include name="registerWithMismatchedPasswordsShouldFail"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- com.demowebshop.api.tests.AuthApiTest -->
+    </classes>
+  </test> <!-- Authentication API(failed) -->
+  <test thread-count="5" name="Product Catalog API(failed)" verbose="0">
+    <classes>
+      <class name="com.demowebshop.api.tests.ProductApiTest">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="homePageShouldContainFeaturedProducts"/>
+        </methods>
+      </class> <!-- com.demowebshop.api.tests.ProductApiTest -->
+    </classes>
+  </test> <!-- Product Catalog API(failed) -->
+</suite> <!-- Failed suite [DemoWebShop API Test Suite] -->

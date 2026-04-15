@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-04T23:42:51 IST" name="DemoWebShop API Test Suite" finished-at="2026-04-04T23:43:32 IST" duration-ms="41138">
+    <groups>
+    </groups>
+    <test started-at="2026-04-04T23:42:51 IST" name="Authentication API" finished-at="2026-04-04T23:43:01 IST" duration-ms="10041">
+      <class name="com.demowebshop.api.tests.AuthApiTest">
+        <test-method signature="loginPageShouldReturn200()[pri:0, instance:com.demowebshop.api.tests.AuthApiTest@5bb8f9e2]" started-at="2026-04-04T23:42:51 IST" name="loginPageShouldReturn200" description="TC_API_AUTH_001 - Login page should return HTTP 200" finished-at="2026-04-04T23:42:55 IST" duration-ms="3884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageShouldReturn200 -->
+        <test-method signature="loginWithEmptyCredentialsShouldShowValidation()[pri:0, instance:com.demowebshop.api.tests.AuthApiTest@5bb8f9e2]" started-at="2026-04-04T23:42:55 IST" name="loginWithEmptyCredentialsShouldShowValidation" description="TC_API_AUTH_004 - Login with empty credentials should return validation error" finished-at="2026-04-04T23:42:56 IST" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithEmptyCredentialsShouldShowValidation -->
+        <test-method signature="loginWithInvalidCredentialsShouldFail()[pri:0, instance:com.demowebshop.api.tests.AuthApiTest@5bb8f9e2]" started-at="2026-04-04T23:42:56 IST" name="loginWithInvalidCredentialsShouldFail" description="TC_API_AUTH_003 - Login with invalid credentials should return error message" finished-at="2026-04-04T23:42:56 IST" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentialsShouldFail -->
+        <test-method signature="loginWithValidCredentialsShouldSucceed()[pri:0, instance:com.demowebshop.api.tests.AuthApiTest@5bb8f9e2]" started-at="2026-04-04T23:42:56 IST" name="loginWithValidCredentialsShouldSucceed" description="TC_API_AUTH_002 - Login with valid credentials should redirect to home" finished-at="2026-04-04T23:42:57 IST" duration-ms="541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentialsShouldSucceed -->
+        <test-method signature="loginWithWrongPasswordShouldFail()[pri:0, instance:com.demowebshop.api.tests.AuthApiTest@5bb8f9e2]" started-at="2026-04-04T23:42:57 IST" name="loginWithWrongPasswordShouldFail" description="TC_API_AUTH_005 - Login with wrong password should return error" finished-at="2026-04-04T23:42:58 IST" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithWrongPasswordShouldFail -->
+        <test-method signature="passwordRecoveryPageShouldReturn200()[pri:0, instance:com.demowebshop.api.tests.AuthApiTest@5bb8f9e2]" started-at="2026-04-04T23:42:58 IST" name="passwordRecoveryPageShouldReturn200" description="TC_API_AUTH_008 - Password recovery page should return HTTP 200" finished-at="2026-04-04T23:42:59 IST" duration-ms="1318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordRecoveryPageShouldReturn200 -->
+        <test-method signature="registerPageShouldReturn200()[pri:0, instance:com.demowebshop.api.tests.AuthApiTest@5bb8f9e2]" started-at="2026-04-04T23:42:59 IST" name="registerPageShouldReturn200" description="TC_API_AUTH_006 - Register page should return HTTP 200" finished-at="2026-04-04T23:43:00 IST" duration-ms="1503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerPageShouldReturn200 -->
+        <test-method signature="registerWithMismatchedPasswordsShouldFail()[pri:0, instance:com.demowebshop.api.tests.AuthApiTest@5bb8f9e2]" started-at="2026-04-04T23:43:00 IST" name="registerWithMismatchedPasswordsShouldFail" description="TC_API_AUTH_007 - Registration with mismatched passwords should not cause server error" finished-at="2026-04-04T23:43:01 IST" duration-ms="582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithMismatchedPasswordsShouldFail -->
+      </class> <!-- com.demowebshop.api.tests.AuthApiTest -->
+    </test> <!-- Authentication API -->
+    <test started-at="2026-04-04T23:43:01 IST" name="Product Catalog API" finished-at="2026-04-04T23:43:24 IST" duration-ms="23195">
+      <class name="com.demowebshop.api.tests.ProductApiTest">
+        <test-method signature="booksCatalogResponseTimeShouldBeAcceptable()[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:01 IST" name="booksCatalogResponseTimeShouldBeAcceptable" description="TC_API_PROD_010 - Books catalog response time should be under 10 seconds" finished-at="2026-04-04T23:43:03 IST" duration-ms="1507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- booksCatalogResponseTimeShouldBeAcceptable -->
+        <test-method signature="categoryPageShouldReturn200(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:03 IST" name="categoryPageShouldReturn200" description="TC_API_PROD_003 - Category pages should return HTTP 200" data-provider="categories" finished-at="2026-04-04T23:43:04 IST" duration-ms="1432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Books]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/books]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Books]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryPageShouldReturn200 -->
+        <test-method signature="categoryPageShouldReturn200(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:04 IST" name="categoryPageShouldReturn200" description="TC_API_PROD_003 - Category pages should return HTTP 200" data-provider="categories" finished-at="2026-04-04T23:43:05 IST" duration-ms="1524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/electronics]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryPageShouldReturn200 -->
+        <test-method signature="categoryPageShouldReturn200(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:05 IST" name="categoryPageShouldReturn200" description="TC_API_PROD_003 - Category pages should return HTTP 200" data-provider="categories" finished-at="2026-04-04T23:43:07 IST" duration-ms="1540" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Computers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/computers]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Computers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryPageShouldReturn200 -->
+        <test-method signature="categoryPageShouldReturn200(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:07 IST" name="categoryPageShouldReturn200" description="TC_API_PROD_003 - Category pages should return HTTP 200" data-provider="categories" finished-at="2026-04-04T23:43:09 IST" duration-ms="1528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jewelry]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/jewelry]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Jewelry]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryPageShouldReturn200 -->
+        <test-method signature="categoryPageShouldReturn200(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:09 IST" name="categoryPageShouldReturn200" description="TC_API_PROD_003 - Category pages should return HTTP 200" data-provider="categories" finished-at="2026-04-04T23:43:10 IST" duration-ms="1509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gift Cards]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/gift-cards]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gift Cards]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryPageShouldReturn200 -->
+        <test-method signature="homePageResponseTimeShouldBeAcceptable()[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:10 IST" name="homePageResponseTimeShouldBeAcceptable" description="TC_API_PROD_009 - Home page response time should be under 10 seconds" finished-at="2026-04-04T23:43:11 IST" duration-ms="1358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageResponseTimeShouldBeAcceptable -->
+        <test-method signature="homePageShouldContainProducts()[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:11 IST" name="homePageShouldContainProducts" description="TC_API_PROD_002 - Home page should include product items in the response" finished-at="2026-04-04T23:43:13 IST" duration-ms="1635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageShouldContainProducts -->
+        <test-method signature="homePageShouldReturn200()[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:13 IST" name="homePageShouldReturn200" description="TC_API_PROD_001 - Home page should return HTTP 200" finished-at="2026-04-04T23:43:15 IST" duration-ms="1876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageShouldReturn200 -->
+        <test-method signature="productDetailComputerShouldReturn200()[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:15 IST" name="productDetailComputerShouldReturn200" description="TC_API_PROD_005 - Product detail page (Build Your Own Computer) should return 200" finished-at="2026-04-04T23:43:17 IST" duration-ms="1828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productDetailComputerShouldReturn200 -->
+        <test-method signature="productDetailFictionShouldReturn200()[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:17 IST" name="productDetailFictionShouldReturn200" description="TC_API_PROD_004 - Product detail page (Fiction) should return HTTP 200" finished-at="2026-04-04T23:43:19 IST" duration-ms="2239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productDetailFictionShouldReturn200 -->
+        <test-method signature="searchForBookShouldReturnResults()[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:19 IST" name="searchForBookShouldReturnResults" description="TC_API_PROD_006 - Search for &#039;book&#039; should return results page" finished-at="2026-04-04T23:43:21 IST" duration-ms="1633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForBookShouldReturnResults -->
+        <test-method signature="searchForNonExistentProductShouldShowNoResults()[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:21 IST" name="searchForNonExistentProductShouldShowNoResults" description="TC_API_PROD_008 - Search for non-existent product should return no results message" finished-at="2026-04-04T23:43:22 IST" duration-ms="1805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForNonExistentProductShouldShowNoResults -->
+        <test-method signature="searchWithEmptyQueryShouldShowSearchPage()[pri:0, instance:com.demowebshop.api.tests.ProductApiTest@4b1abd11]" started-at="2026-04-04T23:43:22 IST" name="searchWithEmptyQueryShouldShowSearchPage" description="TC_API_PROD_007 - Search for empty query should show search page" finished-at="2026-04-04T23:43:24 IST" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithEmptyQueryShouldShowSearchPage -->
+      </class> <!-- com.demowebshop.api.tests.ProductApiTest -->
+    </test> <!-- Product Catalog API -->
+    <test started-at="2026-04-04T23:43:24 IST" name="Cart API" finished-at="2026-04-04T23:43:32 IST" duration-ms="7861">
+      <class name="com.demowebshop.api.tests.CartApiTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.demowebshop.api.tests.CartApiTest@264c5d07]" started-at="2026-04-04T23:42:50 IST" name="setUpSuite" finished-at="2026-04-04T23:42:51 IST" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method signature="addBookToCartShouldNotReturn5xx()[pri:0, instance:com.demowebshop.api.tests.CartApiTest@264c5d07]" started-at="2026-04-04T23:43:24 IST" name="addBookToCartShouldNotReturn5xx" description="TC_API_CART_004 - Add book to cart should respond without server error" finished-at="2026-04-04T23:43:25 IST" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBookToCartShouldNotReturn5xx -->
+        <test-method signature="addInvalidProductToCartShouldReturn404Or302()[pri:0, instance:com.demowebshop.api.tests.CartApiTest@264c5d07]" started-at="2026-04-04T23:43:25 IST" name="addInvalidProductToCartShouldReturn404Or302" description="TC_API_CART_005 - Add to cart endpoint should reject invalid product ID" finished-at="2026-04-04T23:43:25 IST" duration-ms="569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addInvalidProductToCartShouldReturn404Or302 -->
+        <test-method signature="addSimpleProductToCartShouldSucceed()[pri:0, instance:com.demowebshop.api.tests.CartApiTest@264c5d07]" started-at="2026-04-04T23:43:25 IST" name="addSimpleProductToCartShouldSucceed" description="TC_API_CART_003 - Add simple product to cart should return success response" finished-at="2026-04-04T23:43:26 IST" duration-ms="925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSimpleProductToCartShouldSucceed -->
+        <test-method signature="addToWishlistShouldNotReturn5xx()[pri:0, instance:com.demowebshop.api.tests.CartApiTest@264c5d07]" started-at="2026-04-04T23:43:26 IST" name="addToWishlistShouldNotReturn5xx" description="TC_API_CART_007 - Add to wishlist should respond without server error" finished-at="2026-04-04T23:43:27 IST" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToWishlistShouldNotReturn5xx -->
+        <test-method signature="cartPageForGuestShouldShowEmptyCart()[pri:0, instance:com.demowebshop.api.tests.CartApiTest@264c5d07]" started-at="2026-04-04T23:43:27 IST" name="cartPageForGuestShouldShowEmptyCart" description="TC_API_CART_002 - Cart page for guest should contain empty cart message or cart table" finished-at="2026-04-04T23:43:28 IST" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartPageForGuestShouldShowEmptyCart -->
+        <test-method signature="cartPageShouldReturn200ForGuest()[pri:0, instance:com.demowebshop.api.tests.CartApiTest@264c5d07]" started-at="2026-04-04T23:43:28 IST" name="cartPageShouldReturn200ForGuest" description="TC_API_CART_001 - Cart page should return HTTP 200 for guest user" finished-at="2026-04-04T23:43:30 IST" duration-ms="1641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartPageShouldReturn200ForGuest -->
+        <test-method signature="checkoutPageShouldRequireLogin()[pri:0, instance:com.demowebshop.api.tests.CartApiTest@264c5d07]" started-at="2026-04-04T23:43:30 IST" name="checkoutPageShouldRequireLogin" description="TC_API_CART_008 - Checkout page should redirect to login for guest user" finished-at="2026-04-04T23:43:31 IST" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutPageShouldRequireLogin -->
+        <test-method signature="wishlistPageShouldReturn200()[pri:0, instance:com.demowebshop.api.tests.CartApiTest@264c5d07]" started-at="2026-04-04T23:43:31 IST" name="wishlistPageShouldReturn200" description="TC_API_CART_006 - Wishlist page should return HTTP 200" finished-at="2026-04-04T23:43:32 IST" duration-ms="1405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wishlistPageShouldReturn200 -->
+      </class> <!-- com.demowebshop.api.tests.CartApiTest -->
+    </test> <!-- Cart API -->
+  </suite> <!-- DemoWebShop API Test Suite -->
+</testng-results>

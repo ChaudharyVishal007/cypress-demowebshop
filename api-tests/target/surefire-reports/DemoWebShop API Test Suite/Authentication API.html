@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  Authentication API</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Authentication API</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 05 00:17:39 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>12 seconds (12197 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.demowebshop.api.tests.AuthApiTest.loginPageShouldReturn200()'><b>loginPageShouldReturn200</b><br>Test class: com.demowebshop.api.tests.AuthApiTest<br>Test method: TC_API_AUTH_001 - Login page should return HTTP 200</td>
+<td></td>
+<td>5</td>
+<td>com.demowebshop.api.tests.AuthApiTest@5f78de22</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.AuthApiTest.loginWithEmptyCredentialsShouldShowValidation()'><b>loginWithEmptyCredentialsShouldShowValidation</b><br>Test class: com.demowebshop.api.tests.AuthApiTest<br>Test method: TC_API_AUTH_004 - Login with empty credentials should return validation error</td>
+<td></td>
+<td>0</td>
+<td>com.demowebshop.api.tests.AuthApiTest@5f78de22</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.AuthApiTest.loginWithValidCredentialsShouldSucceed()'><b>loginWithValidCredentialsShouldSucceed</b><br>Test class: com.demowebshop.api.tests.AuthApiTest<br>Test method: TC_API_AUTH_002 - Login with valid credentials should redirect to home</td>
+<td></td>
+<td>0</td>
+<td>com.demowebshop.api.tests.AuthApiTest@5f78de22</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.AuthApiTest.registerWithMismatchedPasswordsShouldFail()'><b>registerWithMismatchedPasswordsShouldFail</b><br>Test class: com.demowebshop.api.tests.AuthApiTest<br>Test method: TC_API_AUTH_007 - Registration with mismatched passwords should not cause server error</td>
+<td></td>
+<td>0</td>
+<td>com.demowebshop.api.tests.AuthApiTest@5f78de22</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.AuthApiTest.loginWithWrongPasswordShouldFail()'><b>loginWithWrongPasswordShouldFail</b><br>Test class: com.demowebshop.api.tests.AuthApiTest<br>Test method: TC_API_AUTH_005 - Login with wrong password should return error</td>
+<td></td>
+<td>0</td>
+<td>com.demowebshop.api.tests.AuthApiTest@5f78de22</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.AuthApiTest.passwordRecoveryPageShouldReturn200()'><b>passwordRecoveryPageShouldReturn200</b><br>Test class: com.demowebshop.api.tests.AuthApiTest<br>Test method: TC_API_AUTH_008 - Password recovery page should return HTTP 200</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.AuthApiTest@5f78de22</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.AuthApiTest.loginWithInvalidCredentialsShouldFail()'><b>loginWithInvalidCredentialsShouldFail</b><br>Test class: com.demowebshop.api.tests.AuthApiTest<br>Test method: TC_API_AUTH_003 - Login with invalid credentials should return error message</td>
+<td></td>
+<td>0</td>
+<td>com.demowebshop.api.tests.AuthApiTest@5f78de22</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.AuthApiTest.registerPageShouldReturn200()'><b>registerPageShouldReturn200</b><br>Test class: com.demowebshop.api.tests.AuthApiTest<br>Test method: TC_API_AUTH_006 - Register page should return HTTP 200</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.AuthApiTest@5f78de22</td></tr>
+</table><p>
+</body>
+</html>

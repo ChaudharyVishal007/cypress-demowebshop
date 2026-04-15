@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Assertion Failures",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*AssertionError.*|.*expected.*to.*|.*assert.*"
+  },
+  {
+    "name": "Element Not Found",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*not found.*|.*does not exist.*|.*Unable to find.*|.*Timed out retrying.*"
+  },
+  {
+    "name": "Timeout Errors",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*Timed out.*|.*timeout.*|.*CypressError.*"
+  },
+  {
+    "name": "Network / HTTP Errors",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*Network.*|.*CORS.*|.*fetch.*|.*XHR.*|.*status code 5.*"
+  },
+  {
+    "name": "URL / Navigation Errors",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*cy.visit.*|.*cy.url.*|.*navigation.*"
+  },
+  {
+    "name": "Known Flaky Tests",
+    "matchedStatuses": ["failed"],
+    "flaky": true
+  },
+  {
+    "name": "Product Defects",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*expected.*contain.*|.*should have.*"
+  }
+]

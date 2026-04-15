@@ -1,0 +1,23 @@
+<div>POST to http://demowebshop.tricentis.com/login</div>
+
+
+    <h4>Headers</h4>
+    <div>
+            <div>Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</div>
+            <div>User-Agent: Mozilla/5.0 RestAssured/ApiTests</div>
+            <div>Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1</div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        curl -v -X POST &#39;http://demowebshop.tricentis.com/login&#39; -H &#39;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#39; -H &#39;User-Agent: Mozilla/5.0 RestAssured/ApiTests&#39; -H &#39;Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1&#39; --form &#39;RememberMe=false&#39; --form &#39;Email=testuser_jetski_12347@example.com&#39; --form &#39;Password=Password123!&#39;
+    </div>
+
+    <h4>FormParams</h4>
+    <div>
+            <div>RememberMe: false</div>
+            <div>Email: testuser_jetski_12347@example.com</div>
+            <div>Password: Password123!</div>
+    </div>

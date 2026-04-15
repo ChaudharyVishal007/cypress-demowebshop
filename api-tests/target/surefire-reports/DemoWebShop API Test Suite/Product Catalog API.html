@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>TestNG:  Product Catalog API</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Product Catalog API</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Apr 04 23:43:01 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>23 seconds (23195 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.homePageShouldContainProducts()'><b>homePageShouldContainProducts</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_002 - Home page should include product items in the response</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.searchWithEmptyQueryShouldShowSearchPage()'><b>searchWithEmptyQueryShouldShowSearchPage</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_007 - Search for empty query should show search page</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.categoryPageShouldReturn200()'><b>categoryPageShouldReturn200</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_003 - Category pages should return HTTP 200<br>Parameters: Gift Cards, /gift-cards, Gift Cards</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.productDetailComputerShouldReturn200()'><b>productDetailComputerShouldReturn200</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_005 - Product detail page (Build Your Own Computer) should return 200</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.categoryPageShouldReturn200()'><b>categoryPageShouldReturn200</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_003 - Category pages should return HTTP 200<br>Parameters: Computers, /computers, Computers</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.productDetailFictionShouldReturn200()'><b>productDetailFictionShouldReturn200</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_004 - Product detail page (Fiction) should return HTTP 200</td>
+<td></td>
+<td>2</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.booksCatalogResponseTimeShouldBeAcceptable()'><b>booksCatalogResponseTimeShouldBeAcceptable</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_010 - Books catalog response time should be under 10 seconds</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.categoryPageShouldReturn200()'><b>categoryPageShouldReturn200</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_003 - Category pages should return HTTP 200<br>Parameters: Jewelry, /jewelry, Jewelry</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.searchForNonExistentProductShouldShowNoResults()'><b>searchForNonExistentProductShouldShowNoResults</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_008 - Search for non-existent product should return no results message</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.searchForBookShouldReturnResults()'><b>searchForBookShouldReturnResults</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_006 - Search for 'book' should return results page</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.homePageShouldReturn200()'><b>homePageShouldReturn200</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_001 - Home page should return HTTP 200</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.categoryPageShouldReturn200()'><b>categoryPageShouldReturn200</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_003 - Category pages should return HTTP 200<br>Parameters: Electronics, /electronics, Electronics</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.homePageResponseTimeShouldBeAcceptable()'><b>homePageResponseTimeShouldBeAcceptable</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_009 - Home page response time should be under 10 seconds</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+<tr>
+<td title='com.demowebshop.api.tests.ProductApiTest.categoryPageShouldReturn200()'><b>categoryPageShouldReturn200</b><br>Test class: com.demowebshop.api.tests.ProductApiTest<br>Test method: TC_API_PROD_003 - Category pages should return HTTP 200<br>Parameters: Books, /books, Books</td>
+<td></td>
+<td>1</td>
+<td>com.demowebshop.api.tests.ProductApiTest@4b1abd11</td></tr>
+</table><p>
+</body>
+</html>
